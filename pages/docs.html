@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lightx | Documentation</title>
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="../assets/lightx.min.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/app.css">
+</head>
+<body>
+
+
+	<!-- Sidenav -->
+	<div class="sidenav">
+		<a href="../index.html">HOME</a>
+		<hr>
+		<h5>Components</h5>
+		<a href="#layouts">Layouts</a>
+		<a href="#navbar">Navbar</a>
+		<a href="#button">Buttons</a>
+		<a href="#form">Form</a>
+		<a href="#table">Table</a>
+		<a href="#typography">Typography</a>
+		<a href="#code">Code</a>
+		<a href="#list">Lists</a>
+		<a href="#blockquote">Blockquote</a>
+		<hr>
+		<h5>Follow</h5>
+		<a href="https://github.com/amine1107/lightx"><i class="fab fa-github fa-3x"></i></a>
+	</div>
+
+	<dir class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<hr>
+					<h1 class="text-center" id="layouts">Layouts</h1>
+					<hr>
+					<h3>Introduction</h3>
+					<p>Lightx offers you a grid system based on a 12 responsive columns with a max width of <span class="text-red text-bg-smoke">1000px</span>.</p>
+					<p>Each column is contained within rows, which are contained within a container. The container is set to a maximum width of 960px, but you can edit without having to break anything.</p>
+					<h3>Grids</h3>
+
+					<!-- The grids -->
+					<div class="grid-display">
+						<div class="row">
+							<div class="col-1">
+								<p>
+									one
+								</p>
+							</div>
+							<div class="col-11">
+								<p>
+									eleven
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-2">
+								<p>
+									two
+								</p>
+							</div>
+							<div class="col-10">
+								<p>
+									ten
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3">
+								<p>
+									three
+								</p>
+							</div>
+							<div class="col-9">
+								<p>
+									nine
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<p>
+									four
+								</p>
+							</div>
+							<div class="col-8">
+								<p>
+									eight
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<p>
+									five
+								</p>
+							</div>
+							<div class="col-7">
+								<p>
+									seven
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>
+									six
+								</p>
+							</div>
+							<div class="col-6">
+								<p>
+									six
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<p>
+									twelve
+								</p>
+							</div>
+						</div>
+					</div>
+					<pre data-lang="html">
+&lt;div class="container"&rsaquo;
+   &lt;div class="row"&rsaquo;
+      &lt;div class="col-12"&rsaquo;
+          ...
+      &lt;/div&rsaquo;
+   &lt;/div&rsaquo;
+&lt;/div&rsaquo;      						
+					</pre>
+					<h4>Exemple</h4>
+					<div class="grid-display">
+						<div class="row">
+							<div class="col-3">
+								<p>
+									col-3
+								</p>
+							</div>
+							<div class="col-9">
+								<p>
+									col-9
+								</p>
+							</div>
+						</div>
+					</div>
+					<pre data-lang="html">
+&lt;div class="container"&gt;
+   &lt;div class="row"&gt;
+      &lt;div class="col-3"&gt;
+          ...
+      &lt;/div&gt;
+       &lt;div class="col-9"&gt;
+          ...
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;      						
+					</pre>
+					<p>This table you offre each width of each column for 720px :</p>
+					<div class="col-12">
+						<table class="full-width">
+							<thead>
+								<tr>
+									<th>Column</th>
+									<th>Width</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>col-1</td>
+									<td>4.33%</td>
+								</tr>
+								<tr>
+									<td>col-2</td>
+									<td>12.66%</td>
+								</tr>
+								<tr>
+									<td>col-3</td>
+									<td>21%</td>
+								</tr>
+								<tr>
+									<td>col-4</td>
+									<td>29.33%</td>
+								</tr>
+								<tr>
+									<td>col-5</td>
+									<td>37.66%</td>
+								</tr>
+								<tr>
+									<td>col-6</td>
+									<td>46%</td>
+								</tr>
+								<tr>
+									<td>col-7</td>
+									<td>54.33%</td>
+								</tr>
+								<tr>
+									<td>col-8</td>
+									<td>62.66%</td>
+								</tr>
+								<tr>
+									<td>col-9</td>
+									<td>74%</td>
+								</tr>
+								<tr>
+									<td>col-10</td>
+									<td>79.33%</td>
+								</tr>
+								<tr>
+									<td>col-11</td>
+									<td>87.66%</td>
+								</tr>
+								<tr>
+									<td>col-12</td>
+									<td>96%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+                <hr>
+				<div class="col-12">
+					<h1 class="text-center" id="navbar">Navbar</h1>
+					<hr>
+					<h4>Introduction</h4>
+					<p>Lightx offer you a flexible and responsive navbar built with the magic <b>Flexbox</b>.</p>
+					<p>You can build a responsive navbar with the esiest way</p>
+					<div class="header">
+						<h1 class="logo"><a href="#">Logo</a></h1>
+						<ul class="main-nav">
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link2</a></li>
+						</ul>
+					</div>
+					<pre data-lang="html">
+&lt;div class="header">
+ &lt;h1 class="logo">&lt;a href="#">Logo&lt;/a>&lt;/h1>
+  &lt;ul class="main-nav">
+   &lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+   &lt;li>&lt;a href="#">Link2&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>						
+					</pre>
+					<hr>
+					<h1 class="text-center" id="button">Buttons</h1>
+					<hr>
+					<h4>Introduction</h4>
+					<p>Lightx offers you a vast choice among the buttons, the integration of the button is very simple, the class <span class="text-red text-bg-smoke">"btn" </span>is by default.</p>
+					<div class="btn-groupe">
+						<button class="btn">default</button>
+						<button class="btn primary">primary</button>
+						<button class="btn success">success</button>
+						<button class="btn warning">warning</button>
+						<button class="btn disabled">disabled</button>
+					</div>
+					<pre data-lang="html">
+&lt;button class="btn">default&lt;/button>
+&lt;button class="btn primary">primary&lt;/button>
+&lt;button class="btn success">success&lt;/button>
+&lt;button class="btn warning">warning&lt;/button>
+&lt;button class="btn disabled">disabled&lt;/button>						
+					</pre>
+					<h4>Border Button</h4>
+					<div class="btn-groupe">
+						<button class="btn border">Button</button>
+						<button class="btn border rever">Button</button>
+						<button class="btn border emerald">Button</button>
+						<button class="btn border asphalt">Button</button>
+					</div>
+					<pre data-lang="html">
+&lt;button class="btn border">Button&lt;/button>						
+					</pre>
+					<h4>Button color</h4>
+					<div class="col-12">
+						<table class="full-width">
+							<thead>
+								<tr>
+									<th>Button Class</th>
+									<th>Color</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>btn</td>
+									<td><div class="btn"></div></td>
+								</tr>
+								<tr>
+									<td>btn primary</td>
+									<td><div class="btn primary"></div></td>
+								</tr>
+								<tr>
+									<td>btn success</td>
+									<td><div class="btn success"></div></td>
+								</tr>
+								<tr>
+									<td>btn warning</td>
+									<td><div class="btn warning"></div></td>
+								</tr>
+								<tr>
+									<td>btn turquoise</td>
+									<td><div class="btn turquoise"></div></td>
+								</tr>
+								<tr>
+									<td>btn emerald</td>
+									<td><div class="btn emerald"></div></td>
+								</tr>
+								<tr>
+									<td>btn rever</td>
+									<td><div class="btn rever"></div></td>
+								</tr>
+								<tr>
+									<td>btn amethyst</td>
+									<td><div class="btn amethyst"></div></td>
+								</tr>
+								<tr>
+									<td>btn asphalt</td>
+									<td><div class="btn asphalt"></div></td>
+								</tr>
+								<tr>
+									<td>btn blue</td>
+									<td><div class="btn blue"></div></td>
+								</tr>
+								<tr>
+									<td>btn red</td>
+									<td><div class="btn red"></div></td>
+								</tr>
+								<tr>
+									<td>btn orange</td>
+									<td><div class="btn orange"></div></td>
+								</tr>
+								<tr>
+									<td>btn black</td>
+									<td><div class="btn black"></div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h4><i class="far fa-lightbulb"></i> | Trick :</h4>
+					<blockquote>you can add more colors by calling the class <span class="text-red">"btn"</span> and give it a special name and color.</blockquote>
+					<h5>Exemple:</h5>
+					<pre data-lang="css">
+.btn.yellow {
+	color: #f1c40f;
+}						
+					</pre>
+					<h4>Button size</h4>
+					<div class="btn-groupe">
+						<button class="btn primary vsmall">button</button>
+						<button class="btn primary small">button</button>
+						<button class="btn primary large">button</button>
+						<button class="btn primary vlarge">button</button>
+					</div>
+					<p>You can costumize your button width adding a simple class <span class="text-red text-bg-smoke">vsmall</span> wich means very small, <span class="text-red text-bg-smoke">small</span>, <span class="text-red text-bg-smoke">large</span> or <span class="text-red text-bg-smoke">vlarge</span>.</p>
+					<hr>
+					<!-- form -->
+					<h1 class="text-center" id="form">Form</h1>
+					<hr>
+					<div class="col-12">
+						<form>
+							<label for="exampleEmailInput">Your email</label>
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+							<label for="examplePasswordInput">Your password</label>
+							<input class="u-full-width" type="password" placeholder="password" id="examplePasswordInput">
+							<select>
+								<option>Male</option>
+								<option>Female</option>
+							</select><br>
+							<button class="btn success">Sign in</button>
+						</form>
+					</div>
+					<p>All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+					<pre data-lang="html">
+&lt;form>
+ &lt;label for="exampleEmailInput">Your email&lt;/label>
+ &lt;input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+ &lt;label for="examplePasswordInput">Your password&lt;/label>
+ &lt;input class="u-full-width" type="password" placeholder="password" id="examplePasswordInput">
+ &lt;select>
+ 	&lt;option>Male&lt;/option>
+	&lt;option>Female&lt;/option>
+ &lt;/select>
+ &lt;button class="btn success">Sign in&lt;/button>
+&lt;/form>						
+					</pre>
+                    <hr>
+					<h1 class="text-center" id="table">Tables</h1>
+					<hr>
+					<h4>Introduction</h4>
+					<p>Lightx offers you an responsive and simple Tables.</p>
+					<div class="col-12">
+						<table class="full-width">
+							<thead>
+								<tr>
+									<th>City</th>
+									<th>Population</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Algiers</td>
+									<td>7 Million</td>
+								</tr>
+								<tr>
+									<td>Oran</td>
+									<td>1 Million</td>
+								</tr>
+								<tr>
+									<td>Costantine</td>
+									<td>900 Miles</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<pre data-lang="html">
+
+&lt;table class="full-width">
+ &lt;thead>
+   &lt;tr>
+     &lt;th>Name&lt;/th>
+	 &lt;th>City&lt;/th>
+     &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+   &lt;tr 
+    &lt;td>Amine&lt;/td>
+	&lt;td>Ain Temouchent&lt;/td>
+   &lt;/tr>
+ &lt;/tbody>
+&lt;/table>						
+					</pre>
+					<hr>
+					<h1 class="text-center" id="typography">Typography</h1>
+					<hr>
+					<p>the typography is based on the visual aspect, gives you a very good view of the text</p>
+					<h1>Heading</h1>
+					<h2>Heading</h2>
+					<h3>Heading</h3>
+					<h4>Heading</h4>
+					<h5>Heading</h5>
+					<h6>Heading</h6>
+					<hr>
+					<h1 class="text-center" id="code">Code</h1>
+					<hr>
+					<p>Lightx is created with code, so he decided to give you a very advanced vision regarding the tag code</p>
+					<p>Create a simple tag <span class="text-red text-bg-smoke">pre</span> and give it a <span class="text-red text-bg-smoke">data-lang</span>.</p>
+					<h5>Exemple :</h5>
+					<pre data-lang="python">
+def factorielle(n):
+    return 1 if n < 2 else n * factorielle(n - 1)						
+					</pre>
+					<hr>
+					<h1 class="text-center" id="lists">Lists</h1>
+					<hr>
+					<p>Lightx has three types of lists: The unordered list use ul element will be marked with a outline circles, the ordered list use ol element and your items will be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
+					<h5>Unordered List :</h5>
+					<ul>
+						<li>Algeria</li>
+						<li>Morocco</li>
+						<li>Tunisia</li>
+					</ul>
+					<h5>Ordered List :</h5>
+					<ol>
+						<li>Lightx</li>
+						<li>Hexa</li>
+					</ol>
+					<h5>Description List :</h5>
+					<dl>
+						<li>Install Lightx</li>
+						<li>Create what you want</li>
+					</dl>
+					<hr>
+					<h1 class="text-center" id="blockquote">Blockquote</h1>
+					<hr>
+					<blockquote>"What one programmer can do in one month, two programmers can do in two months." - Fred Brooks</blockquote>
+					<p>You can change anything you want, the border left or the background by changing his value on the css file.</p>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	</body>
+	</html>
