@@ -7,41 +7,149 @@
   <title>Lightx Css Micro Framework</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/lightx.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lightx/master/lightx.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/app.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
+  <!-- Background image -->
+
+  <section class="section sectionHome">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img class="full-width" src="assets/logo.png">
+          <h3 class="text-center">Lightweight, Flexible, and Modern Css framework</h3>
+          <h5>V1.0</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+   <!-- Header -->
+  <header class="menu header">
     <h1 class="logo"><a href="https://amine1107.github.io/lightx/">LightX</a></h1>
     <ul class="main-nav">
       <li><a href="https://amine1107.github.io/lightx/">Home</a></li>
       <li><a href="https://amine1107.github.io/lightx/pages/docs.html">Documentation</a></li>
       <li><a href="https://amine1107.github.io/Hexa/">Hexa.css</a></li>
-      <li><a href="https://github.com/amine1107/lightx"><i class="fab fa-github fa-2x"></i></a></li>
     </ul>
   </header> 
   <!-- /Header -->
   
-  <!-- About -->
-  <div class="container">
+  <!-- Introduction -->
+  <div class="container fluid">
     <div class="row">
-      <div class="col-12">
-        <img class="full-width" src="assets/logo.png">
-        <h3 class="text-center">Lightweight, Flexible, and Modern Css framework</h3>
-        <h5 class="text-center"><b>Lightx</b> is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work. Enjoy !.</h5>
+      <div class="col-4 hover fruit text-center">
+        <h5>Lightweight 10KB</h5>
+        <hr>
+        <i class=" fas fa-tint fa-7x"></i>
+        <hr>
+        <p>At less than 10 kb, <b>Lightx</b> is very light compared to the other framework.</p>
+      </div>
+      <div class="col-4 hover sea text-center">
+        <h5>Modern</h5>
+        <hr>
+        <i class="fab fa-chrome fa-7x"></i>
+        <hr>
+        <p><b>Lightx</b> is created to be compatible with all browsers.</p>
+      </div>
+      <div class="col-4 hover royal text-center">
+        <h5>Responsive</h5>
+        <hr>
+        <i class=" fas fa-desktop fa-7x"></i>
+        <hr>
+        <p><b>Lightx</b> is tested on different devices to be compatible with all apparatus</p>
       </div>
     </div>
   </div>
-  <!-- /About -->
+  <!-- /Introduction -->
 
-  <!-- feature and install -->
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-12 mauve text-center">
+        <h5>Lightx is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work. Enjoy !.</h5>
+      </div>
+      <div class="col-12 brd">
+        <h4 class="text-underline">1 - Getting Started.</h4>
+        <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+        <h5>a - Download Lightx.</h5>
+        <p>the installation of Lightx is very simple, you can get a copy by downloading the minified file : : <a href="https://raw.githubusercontent.com/amine1107/lightx/master/lightx/css/lightx.min.css" download="lightx">Download</a></p>
+        <h5>b -Using CDN</h5>
+        <p>In a very simple way, you can also import the default flavor of Lightx using the CDN.</p>
+        <pre data-lang="html"> <!-- CDN Code -->
+&lt;link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lightx/master/lightx.min.css" />          
+        </pre>
+        <h5>c - Using Git.</h5>
+         <pre data-lang="bash">
+$git clone https://github.com/amine1107/lightx.git          
+        </pre>
+          <blockquote class="text-info"><i class="far fa-lightbulb fa-lg"></i>| You can later download <b>Lightx</b> with npm and bower.</blockquote>
+          <hr>
+        <h4 class="text-underline">2 - Running the tests.</h4>
+        <p>You can simply add Lightx to your file Html.</p>
+        <pre data-lang="html">
+&lsaquo;link rel="stylesheet" type="text/css" href="lightx.min.css"&rsaquo; 
+        </pre>
+        <h4 class="text-underline">3 - Browser Support.</h4>
+      <div class="col-3 frost text-center">
+        <i class="fab fa-safari fa-5x"></i>
+        <h4>Safari</h4>
+      </div>
+      <div class="col-3 dusk text-center">
+        <i class="fab fa-chrome fa-5x"></i>
+        <h4>Chrome</h4>
+      </div>
+      <div class="col-3 royal text-center">
+        <i class="fab fa-edge fa-5x"></i>
+        <h4>Edge</h4>
+      </div>
+      <div class="col-3 fruit text-center">
+        <i class="fab fa-firefox fa-5x"></i>
+        <h4>Firefox</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h3>Features</h3>
+      <div class="col-12 text-center text-success">
+        <h5>Support <b>Lightx</b> on GitHub with only one Star, We encourage to do better than this</h5>
+        <iframe src="https://ghbtns.com/github-btn.html?user=amine1107&repo=lightx&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+      </div>
+      <div class="col-12 text-center text-info">
+        <h5>Fork the project, watch and follow us</h5>
+        <iframe src="https://ghbtns.com/github-btn.html?user=amine1107&repo=lightx&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-6 brd">
+        <h5>License</h5>
+        <hr>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software...</p>
+          <p>For More information : <a href="https://github.com/amine1107/lightx/blob/master/LICENSE">MIT License</a>.</p>
+      </div>
+      <div class="col-6 brd">
+        <h5>Lightx Animations</h5>
+        <hr>
+        <p>You can Add Hexa Animation Library to bring your content to life.Learn more :</p>
+        <p>Hexa is an animation css library, built to be compatible with all browsers, it contains 35 animation type and and only 56 KB</p>
+        <p>For More information : <a href="https://amine1107.github.io/Hexa/">Hexa.css Animation</a>.</p>
+      </div>
+      <div class="col-12 brd">
+        <h5 class="text-underline">Features.</h5>
         <ul>
+          <li>Easy to learn</li>
+          <li>Easy to use</li>
           <li>Lightweight 10KB</li>
           <li>Modern</li>
           <li>12 colmun Grids</li>
@@ -49,46 +157,52 @@
           <li>No Javascript</li>
           <li>Built with Sass</li>
         </ul>
-        <p>PS: This is the Beta version of <b>Lightx</b>.
-      </div>
-      <hr>
-      <div class="col-12">
-        <h3>Getting Started</h3>
-        <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
-        <h4>Version</h4>
-        <p>Version 1.0 Beta</p>
-        <h4>Prerequisites</h4>
-        <p>the easiest way to get <b>Lightx</b> is to download it as a minified file : <a href="https://raw.githubusercontent.com/amine1107/lightx/master/lightx/css/lightx.min.css" download="lightx">Download</a></p>
-        
-        <h4>Installation</h4>
-        <h5>Using Git</h5>
-        <p>Clone Lightx using git.</p>
-        <pre data-lang="bash">
-$git clone https://github.com/amine1107/lightx.git          
+        <hr>
+        <h5 class="text-underline">Sass.</h5>
+        <p>Lightx is built with Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+        <p>Structure of Lightx Sass :</p>
+        <pre>
+|---- scss
+   |---- src
+      |---- components
+          |---- block.scss (Blockquotes)
+          |---- buttons.scss
+          |---- cards.scss
+          |---- code.scss
+          |---- forms.scss
+          |---- navbar.scss
+          |---- progressBar.scss
+          |---- table.scss
+      |---- core
+          |---- base.scss 
+          |---- reset.scss (Normalize.css)
+          |---- variables.scss 
+      |---- layout
+          |---- grids.scss 
+      |---- utilities
+          |---- helpers.scss
+          |---- image.scss
+          |---- list.scss
+          |---- spacing.scss
+          |---- typo.scss (Typography) 
+      |---- lightx.scss                               
         </pre>
-        <blockquote><i class="far fa-lightbulb"></i> | you can later download <b>Lightx</b> with npm and bower</blockquote>
-        <h4>Running the tests</h4>
-        <p>You can simply add <b>Lightx</b> to your file Html.</p>
-        <pre data-lang="html">
-&lsaquo;link rel="stylesheet" type="text/css" href="lightx.min.css"&rsaquo; 
-        </pre>
-        <blockquote><i class="far fa-lightbulb"></i> | You have now everything you want, so Happy Coding !</blockquote>
-        <h3>Licence</h3>
-        <p>Licensed under the <a href="https://github.com/amine1107/lightx/blob/master/LICENSE">MIT</a></p>
-        <blockquote><i class="far fa-lightbulb"></i> | This css framework it's completely free</blockquote>
-        <h3>Lightx Animations</h3>
-        <p>You can Add <b>Hexa Animation Library</b> to bring your content to life for more information: <a href="https://amine1107.github.io/Hexa/">Hexa</a></p>
-        <h3>Author</h3>
-        <h5>Aouane Amine</h5>
-        <a href="https://github.com/amine1107"><i class="fab fa-github fa-3x"></i></a>
-        <a href="https://www.facebook.com/aminedev.x"><i class="fab fa-facebook-square fa-3x"></i></a>
-      </div>
-      <hr>
-      <div class="col-12">
-        <p class="text-center">Aouane Aouane</p>
+        <h5 class="text-underline">Author</h5>
+        <p>Aouane Amine</p>
+        <p>I am a Front-end & Wordpress Developer,author of many Open-Source projects.I have 3 years commercial experience working with clients from around the world, providing responsive front-end development and WordPress websites.</p>
+        <p>The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows. Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.</p>
       </div>
     </div>
   </div>
-
+  <footer class="header">
+    <div class="main-nav">
+      <ul>
+        <li class="text-center"><a href="https://github.com/amine1107">Aouane amine | 2018 MIT License</a></li>
+      </ul>
+    </div>
+  </footer>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
 </body>
 </html>
