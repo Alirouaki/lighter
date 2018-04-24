@@ -66,3 +66,29 @@
 	border: 1px solid #95a5a6;
 }
 
+.section.sectionHome {
+  background-image: url("./back.png");
+  height: 800px;
+  text-align: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Header */ 
+.header {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.section img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.col-4.hover:hover {
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
