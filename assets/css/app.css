@@ -1,0 +1,153 @@
+body {
+  background-color: #f5f6fa;
+}
+/* SideNav */
+.sidenav {
+    height: 100%;
+    width: 140px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #f4f4f4;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #34495e;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #718daa;
+}
+
+.main {
+    margin-left: 135px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*Text background */
+.text-bg-smoke {
+	background-color: #ecf0f1;
+}
+
+.text-red {
+	color: #e74c3c;
+}
+
+.grid-display {
+  margin: 20px 0;
+}
+
+.grid-display [class^="col"] {
+  background: #ecf0f1;
+  border: 1px solid #8e44ad;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.grid-display [class^="col"] p {
+  color: #8e44ad;
+  font-size: 12px;
+}
+
+.color-box {
+	background-color: #95a5a6;
+	border: 1px solid #95a5a6;
+}
+
+.section.sectionHome {
+  background-image: url("../img/back.png");
+  height: 800px;
+  text-align: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Header */ 
+.navbar {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+}
+
+.brand {
+  background: #c0392b;
+  color: #fff;
+}
+
+.toggle {
+  color: #fff;
+}
+
+.col-4.hover:hover {
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
+.shadow {
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
+h1.text-big {
+  font-family: 'Dosis', sans-serif;
+  font-size: 100px;
+  width: 100%;
+  text-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
+.col-12.centred {
+  margin-top: 30%;
+}
+
+.fruit {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.sea {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.royal {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.mauve {
+  background-color: #16a085;
+  color: #fff;
+}
