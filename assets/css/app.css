@@ -151,3 +151,20 @@ h1.text-big {
   background-color: #16a085;
   color: #fff;
 }
+
+
+/* Iframe Css */
+.iBox.mHtml {
+   min-height: 200px;
+}
+
+.iBox.mCss {
+   min-height: 200px;
+}
+
+iframe#liveUpdate {
+  border: 1px solid #333;
+  width: 100%;
+  min-height: 600px;
+  background-color: #fff;
+}
