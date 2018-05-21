@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lighter | Try Lighter online</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="../assets/css/prism.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+</head>
+<body>
+ <!-- Header -->
+ <header>
+
+  <nav class="navbar menu">
+    <a href="#menu" class="toggle">
+      <h5>|||</h5>
+    </a>
+    <a href="amine1107.github.io/lighter" class="brand">Lighter</a>
+    <div class="link-right">
+      <a href="https://amine1107.github.io/lighter/pages/docs.html" class="link">Documentation</a>
+      <a href="https://amine1107.github.io/lighter/pages/tio.html" class="link">Try it online</a>
+      <a href="https://amine1107.github.io/Hexa" class="link">Hexa.css</a>
+      <a href="https://codepen.io/Amine1992/pen/ELmpgL" class="link"><i class="fab fa-codepen fa-lg"></i></a>
+    </div>
+  </nav>
+</header><br>
+
+<!-- Lighter WYSIWYG -->
+<div class="container-fluid">
+  <h3 class="text-center">Try <span class="text-underline">Lighter</span></h3>
+  <hr>
+  <div class="row">
+    <div class="col-6">
+      <textarea class="iBox mHtml" placeholder="Enter your Html code"></textarea>
+    </div>
+    <div class="col-6">
+      <textarea class="iBox mCss" placeholder="Enter your Css code"></textarea>
+    </div>
+    <div class="col-12">
+      <div class="iBox preview">
+        <iframe id="liveUpdate">
+          <!-- ======= Html Iframe =======-->
+
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+                                       
+          </head>
+          <body>
+
+          </body>
+          </html>
+
+          <!-- ======= End Html Iframe =======-->
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="header">
+    <div class="main-nav">
+      <ul>
+        <li class="text-center"><a href="https://github.com/amine1107">Aouane amine | 2018 MIT License</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Script -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/app.js"></script>
+  <script src="../assets/js/prism.js"></script>
+  <script>
+    $(".toggle").on("click", function () {
+      $(".toggle").parent().toggleClass('active');
+    });
+  </script>
+
+  <script type="text/javascript">
+      // Ifram WYSIWYG ------>
+
+      $(function(){
+
+        function fetchHtml(){
+          var html = $(".mHtml").val();
+          return html;
+        }
+
+        function fetchCss(){
+          var css = $(".mCss").val();
+          return css;
+        }
+
+        $(".iBox").on("keyup", function(){
+          var target = $("#liveUpdate")[0].contentWindow.document;
+          target.open();
+          target.close();
+
+          var html = fetchHtml();
+          var css  = fetchCss();
+
+          $("body", target).append(html);
+          $("head", target).append("<link rel='stylesheet' type='text/css' media='screen' href='https://gitcdn.xyz/repo/amine1107/lighter/master/lighter.min.css' /><style>" + css + "</style>");
+
+        });
+
+      });
+    </script>
+  </body>
+  </html>
