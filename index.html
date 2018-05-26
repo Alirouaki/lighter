@@ -24,7 +24,7 @@
           <h1 class="text-center text-big">Lighter</h1>
           <h3 class="text-center">Lightweight, Flexible, and Modern Css framework</h3>
           <h5>V1.1.0</h5>
-          <i class="text-center fas fa-arrow-alt-circle-down fa-3x"></i>
+          <button class="btn success scroll-down>Getting Started</button
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
    <!-- Header -->
   <header>
 
-        <nav class="navbar menu">
+        <nav class="navbar menu ok">
             <a href="#menu" class="toggle">
                 <h5>|||</h5>
             </a>
@@ -225,6 +225,14 @@ $ npm i lighter.css
         $(".toggle").on("click", function () {
             $(".toggle").parent().toggleClass('active');
         });
+    </script>
+    <script type="text/javascript>
+            $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
     </script>
 </body>
 </html>
