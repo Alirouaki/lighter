@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lighter | Getting Started</title>
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
+    <link href="../assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+</head>
+<body class="docBody">
+
+
+       <!-- Sidenav -->
+   <div id="sidebar-toggle">
+      <span id="sidebar-toggle-1"></span>
+      <span id="sidebar-toggle-2"></span>
+      <span id="sidebar-toggle-3"></span>
+  </div>
+  <aside class="sidebar">
+      <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
+      <div class="sidebar-nav text-center">
+        
+        <a href="../index.html">Home</a>
+        <a href="docs.html">Getting Started</a> 
+        <a href="tio.html">Try it</a>
+        <hr><!-- End Getting started -->
+        <button class="dropdown-btn">Layouts 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="gridSystem.html#grids">Grid System</a>
+            <a href="gridSystem.html#containers">Containers</a>
+            <a href="gridSystem.html#row">Rows</a>
+            <a href="gridSystem.html#colmuns">Colmuns</a>
+            <a href="gridSystem.html#navbar">Navbars</a>
+        </div> 
+        <button class="dropdown-btn">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="components.html#accordion">Accordion</a>
+            <a href="components.html#block">Blockquotes</a>
+            <a href="components.html#buttons">Buttons</a>
+            <a href="components.html#cards">Cards</a>
+            <a href="components.html#codes">Codes</a>
+            <a href="components.html#forms">Forms</a>
+            <a href="components.html#progressBar">Progress Bar</a>
+            <a href="components.html#tables">Tables</a>
+        </div>
+        <button class="dropdown-btn">Utilities 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="utilities.html#helpers">Helpers</a>
+            <a href="utilities.html#images">Images</a>
+            <a href="utilities.html#lists">Lists</a>
+            <a href="utilities.html#typo">Typography</a>
+        </div>          
+    </div>
+</div>
+</aside>
+<!-- Main -->
+<div class="post">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h4 id="accordion" class="text-purpple"><a href="##">#</a> Accordion</h4>
+                <hr>
+                <div class="tabs">
+                  <input type="radio" name="tabs" id="tabone" checked="checked">
+                  <label for="tabone">Tab One</label>
+                  <div class="tab">
+                    <h5>Tab One Content</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Tab Two</label>
+                <div class="tab">
+                    <h5>Tab Two Content with image</h5>
+                    <img src="holder.js/1000x200">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do</p>
+                </div>
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">Tab Three</label>
+                <div class="tab">
+                    <h5>Tab Three Content</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+    <p>Lighter offers you an responsive accordion with many features</p>
+    <h6 class="text-underline">Code:</h6>
+    <pre><code class="language-html">
+&lt;div class="tabs">
+ &lt;input type="radio" name="tabs" id="tabone" checked="checked">
+  &lt;label for="tabone">Tab One&lt;/label>
+   &lt;div class="tab">
+      &lt;!-- Contain content of the first tab -->
+   &lt;/div>
+ &lt;input type="radio" name="tabs" id="tabtwo" checked="checked">
+  &lt;label for="tabtwo">Tab One&lt;/label>
+   &lt;div class="tab">
+      &lt;!-- Contain content of the second tab -->
+   &lt;/div>
+ &lt;input type="radio" name="tabs" id="tabthree" checked="checked">
+  &lt;label for="tabthree">Tab One&lt;/label>
+   &lt;div class="tab">
+      &lt;!-- Contain content of the third tab -->
+   &lt;/div>    
+&lt;/div>                   
+    </code></pre>
+    <!-- End Accordion -->
+    <h4 id="block" class="text-purpple"><a href="##">#</a> Blockquotes</h4>
+    <hr>
+    <blockquote>
+        <p>What is Apple, after all? Apple is about people who think 'outside the box,' people who want to use computers to help them change the world, to help them create things that make a difference, and not just to get a job done. __ Steve Jobs</p>
+    </blockquote>
+    <h6 class="text-underline">Code:</h6>
+    <pre>
+        <code class="language-html">
+&lt;blockquote>
+ &lt;p> &lt;!-- Your quotes should be here --> &lt;/p>
+&lt;/blockquote>            
+        </code>
+    </pre>
+    <!-- End blockquote -->
+    <h4 id="buttons" class="text-purpple"><a href="##">#</a> Buttons</h4>
+    <hr>
+    <div class="btn-groupe">
+                <button class="btn">default</button>
+                <button class="btn primary">primary</button>
+                <button class="btn success">success</button>
+                <button class="btn warning">warning</button>
+                <button class="btn disabled">disabled</button>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;button class="btn">default&lt;/button>
+&lt;button class="btn primary">primary&lt;/button>
+&lt;button class="btn success">success&lt;/button>
+&lt;button class="btn warning">warning&lt;/button>
+&lt;button class="btn disabled">disabled&lt;/button>                    
+                </code>
+            </pre>
+            <h6 class="text-purpple text-underline">Block Buttons</h6>
+            <div class="col-12">
+                <button class="btn primary btn-block">Button block</button>
+                <button class="btn success btn-block">Button block</button>
+                <button class="btn amethyst btn-block">Button block</button>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;button class="btn primary btn-block">Button&lt;/button> 
+&lt;button class="btn success btn-block">Button&lt;/button>                    
+                </code>
+            </pre>
+            <h6 class="text-purpple text-underline">Border Buttons</h6>
+            <div class="btn-groupe">
+                <button class="btn border">Button</button>
+                <button class="btn border rever">Button</button>
+                <button class="btn border emerald">Button</button>
+                <button class="btn border asphalt">Button</button>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;button class="btn border">Button&lt;/button>                    
+                </code>
+            </pre>
+            <h6 class="text-purpple text-underline">Button color</h6>
+            <div class="col-12">
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Button Class</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>btn</td>
+                            <td><div class="btn"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn primary</td>
+                            <td><div class="btn primary"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn success</td>
+                            <td><div class="btn success"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn warning</td>
+                            <td><div class="btn warning"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn turquoise</td>
+                            <td><div class="btn turquoise"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn emerald</td>
+                            <td><div class="btn emerald"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn rever</td>
+                            <td><div class="btn rever"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn amethyst</td>
+                            <td><div class="btn amethyst"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn asphalt</td>
+                            <td><div class="btn asphalt"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn blue</td>
+                            <td><div class="btn blue"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn red</td>
+                            <td><div class="btn red"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn orange</td>
+                            <td><div class="btn orange"></div></td>
+                        </tr>
+                        <tr>
+                            <td>btn black</td>
+                            <td><div class="btn black"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h6 class="text-purpple text-underline">Font Button</h6>
+                <h6 class="text-underline">Exemple : </h6>
+                <button class="btn primary"><i class="fas fa-download"></i> Download</button><br>
+                <h6 class="text-underline">Code :</h6>
+                <pre>
+                    <code class="language-html">
+&lt;button class="btn primary">&lt;i class="fas fa-download">&lt;/i>Button&lt;/button>                                            
+                    </code>
+                </pre>
+            <h6 class="text-purpple text-underline">Button size</h6>
+            <div class="btn-groupe">
+                <button class="btn primary vsmall">button</button>
+                <button class="btn primary small">button</button>
+                <button class="btn primary large">button</button>
+                <button class="btn primary vlarge">button</button>
+            </div>
+            <p>You can costumize your button width adding a simple class <span class="text-red text-bg-smoke">vsmall</span> wich means very small, <span class="text-red text-bg-smoke">small</span>, <span class="text-red text-bg-smoke">large</span> or <span class="text-red text-bg-smoke">vlarge</span>.</p>
+
+    <h4 id="cards" class="text-purpple"><a href="##">#</a> Cards</h4>
+    <hr>
+    <div class="card-grid">
+        <div class="card-wrap">
+            <div class="card">
+              <div>
+                <h5>This is an example</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at efficitur nisl. </p>
+            </div>
+        </div>
+    </div> 
+    <div class="card-grid">
+        <div class="card-wrap">
+            <div class="card text-center">
+              <div>
+                <h5>This is an example</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at efficitur nisl. </p>
+            </div>
+        </div>
+    </div>   
+    <div class="card-grid">
+        <div class="card-wrap">
+            <div class="card text-right">
+              <div>
+                <h5>This is an example</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at efficitur nisl. </p>
+            </div>
+        </div>
+    </div> 
+    <pre>
+        <code class="language-html">
+&lt;div class="card-grid"> 
+ &lt;div class="card-wrap">
+  &lt;div class="card">
+   &lt;div> 
+    &lt;h5>Title&lt;/h5>
+     &lt;!-- Your content should be here -->
+   &lt;/div> 
+  &lt;/div>
+ &lt;/div>
+&lt;/div>            
+        </code>
+    </pre> 
+
+    <h6 class="text-purpple text-underline">Card with image</h6>
+        <div class="card-grid">
+        <div class="card-wrap">
+            <div class="card">
+                <img src="holder.js/1100x200">
+              <div>
+                <h5>This is an example</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at efficitur nisl. </p>
+            </div>
+        </div>
+    </div> 
+    <pre>
+        <code class="language-html">
+&lt;div class="card-grid"> 
+ &lt;div class="card-wrap">
+  &lt;div class="card">
+  &lt;img src="../img.jpg">
+   &lt;div> 
+    &lt;h5>Title&lt;/h5>
+     &lt;!-- Your content should be here -->
+   &lt;/div> 
+  &lt;/div>
+ &lt;/div>
+&lt;/div>            
+        </code>
+    </pre> 
+</div>
+     
+     <h6 class="text-purpple text-underline">Card with video</h6>
+        <div class="card-grid">
+        <div class="card-wrap">
+            <div class="card">
+                <iframe class="card-video" width="500" height="300" src="https://www.youtube.com/embed/0gCWPvRZcsI" frameborder="0" allowfullscreen=""></iframe>
+              <div>
+                <h5>This is an example</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at efficitur nisl. </p>
+            </div>
+        </div>
+    </div> 
+    <pre>
+        <code class="language-html">
+&lt;div class="card-grid"> 
+ &lt;div class="card-wrap">
+  &lt;div class="card">
+  &lt;iframe class="card-video" width="500" height="300" src="https://www.youtube.com/embed/0gCWPvRZcsI" frameborder="0" allowfullscreen="">&lt;/iframe>
+   &lt;div> 
+    &lt;h5>Title&lt;/h5>
+     &lt;!-- Your content should be here -->
+   &lt;/div> 
+  &lt;/div>
+ &lt;/div>
+&lt;/div>            
+        </code>
+    </pre> 
+
+    <h4 id="codes" class="text-purpple"><a href="##">#</a> Code</h4>
+            <hr>
+            <h6>Exemple :</h6>
+            <div class="col-12">
+                           <pre>
+                <code>
+h1 {
+    color: red;
+    font-size: 16px;
+}                    
+                </code>
+            </pre>
+            </div>
+            <div class="col-12">
+                <h6>Code :</h6>
+                <pre>
+                    <code class="language-html">
+&lt;pre>
+  &lt;code>
+&lt;div class="row">
+  &lt;!-- Your code -->
+&lt;/div>
+  &lt;/code>
+&lt;/pre>                              
+                    </code>
+                </pre>
+            </div>
+
+            <h4 id="forms" class="text-purpple"><a href="##">#</a> Forms</h4>
+            <hr>
+            <div class="col-12 border">
+                <h6>Exemple :</h6>
+                <form>
+                    <label>Name*</label>
+                    <input type="text" name="" placeholder="Your name">
+                    <label>Email*</label>
+                    <input type="text" name="" placeholder="Your email">
+                    <select>
+                        <option>Web Developer</option>
+                        <option>Software Developer</option>
+                    </select>
+                    <label>Message</label>
+                    <textarea></textarea>
+                    <input type="submit" class="btn success btn-block" name="" value="Submit">
+                </form>
+            </div>
+            <div class="col-12">
+                <h6>Code :</h6>
+                <pre>
+                    <code class="language-html">
+&lt;form>
+ &lt;label>Name&lt;/label>
+ &lt;input type="text" name="" placeholder="Your name">
+ &lt;label>Email&lt;/label>
+ &lt;input type="text" name="" placeholder="Your email">
+ &lt;select>
+  &lt;option>Web Developer&lt;/option>
+  &lt;option>Software Developer&lt;/option>
+ &lt;/select>
+ &lt;label>Message&lt;/label>
+ &lt;textarea>&lt;/textarea>
+ &lt;input type="submit" name="" class="btn success btn-block" value="Submit">
+&lt;/form>                        
+                    </code>
+                </pre>
+            </div>
+
+        <div class="col-12">
+            <h4 id="progressBar" class="text-purpple"><a href="##">#</a> Progress Bar</h4>
+        <hr>
+          <div class="col-6">
+                <h6>Exemple :</h6>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div><br>
+                <div class="progress">
+                    <div class="bar bar-red"></div>
+                </div><br>
+                <div class="progress">
+                    <div class="bar bar-green"></div>
+                </div><br>
+                <div class="progress">
+                    <div class="bar bar-black"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h6>Code</h6>
+                <pre>
+                    <code class="language-html">
+&lt;div class="progress">
+  &lt;div class="bar">&lt;/div>
+&lt;/div>                       
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <h4 id="tables" class="text-purpple"><a href="##">#</a> Tables</h4>
+            <hr>
+            <h6>Exemple :</h6>
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Population</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Algiers</td>
+                            <td>7 Million</td>
+                        </tr>
+                        <tr>
+                            <td>Oran</td>
+                            <td>1 Million</td>
+                        </tr>
+                        <tr>
+                            <td>Costantine</td>
+                            <td>900 Miles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h6>Code :</h6>
+                <pre>
+                    <code class="language-html">
+&lt;table class="full-width">
+    &lt;thead>
+        &lt;tr>
+            &lt;th>City&lt;/th>
+            &lt;th>Population&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>Algiers&lt;/td>
+            &lt;td>7 Million&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Oran&lt;/td>
+            &lt;td>1 Million&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Costantine&lt;/td>
+            &lt;td>900 Miles&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+                        
+                    </code>
+                </pre>
+            </div>
+        </div> 
+
+        </div>
+
+
+</div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- holder -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.js"></script>
+<script src="../assets/js/prism.js"></script>
+<!-- Dropdown Script -->
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+   dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+     dropdownContent.style.display = "none";
+ } else {
+     dropdownContent.style.display = "block";
+ }
+});
+}
+</script>
+<!-- Sidenav -->
+<script type="text/javascript">
+    var sidebarToggle = document.getElementById("sidebar-toggle");
+
+    sidebarToggle.addEventListener("click", function() {
+      document.body.classList.toggle("close");
+  });
+
+    $('h2').on("touchstart",function (){
+  //simply starts listening for touchstart - allows for hover state on touch devices
+});
+</script>
+</body>
+</html>

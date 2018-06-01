@@ -1,782 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lighter | Documentation</title>
-        <link rel="icon" href="../assets/img/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
-	<link href="../assets/css/prism.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lighter | Getting Started</title>
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
+    <link href="../assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
 </head>
 <body class="docBody">
 
 
-	<!-- Sidenav -->
-	<div class="sidenav">
-		<button class="dropdown-btn">Lighter
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-container">
-			<a href="https://amine1107.github.io/lighter/index.html">Home</a>
-            <a href="https://amine1107.github.io/lighter/pages/tio.html">Try it online</a>
-			<a href="https://amine1107.github.io/Hexa">Hexa</a>
-		</div>  
-		<hr>
-
-		<button class="dropdown-btn">Getting Started 
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-container">
-			<a href="#setup">Setup</a>
-		</div>  
+        <!-- Sidenav -->
+   <div id="sidebar-toggle">
+      <span id="sidebar-toggle-1"></span>
+      <span id="sidebar-toggle-2"></span>
+      <span id="sidebar-toggle-3"></span>
+  </div>
+  <aside class="sidebar">
+      <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
+      <div class="sidebar-nav text-center">
+        
+        <a href="../index.html">Home</a>
+        <a href="docs.html">Getting Started</a> 
+        <a href="tio.html">Try it</a>
         <hr><!-- End Getting started -->
-		<button class="dropdown-btn">Layouts 
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-container">
-			<a href="#grids">Grid System</a>
-			<a href="#containers">Containers</a>
-			<a href="#row">Rows</a>
-			<a href="#colmuns">Colmuns</a>
-            <a href="#navbar">Navbars</a>
-		</div> 
+        <button class="dropdown-btn">Layouts 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="gridSystem.html#grids">Grid System</a>
+            <a href="gridSystem.html#containers">Containers</a>
+            <a href="gridSystem.html#row">Rows</a>
+            <a href="gridSystem.html#colmuns">Colmuns</a>
+            <a href="gridSystem.html#navbar">Navbars</a>
+        </div> 
         <button class="dropdown-btn">Components 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#block">Blockquotes</a>
-            <a href="#buttons">Buttons</a>
-            <a href="#cards">Cards</a>
-            <a href="#codes">Codes</a>
-            <a href="#forms">Forms</a>
-            <a href="#progressBar">Progress Bar</a>
-            <a href="#tables">Tables</a>
+            <a href="components.html#accordion">Accordion</a>
+            <a href="components.html#block">Blockquotes</a>
+            <a href="components.html#buttons">Buttons</a>
+            <a href="components.html#cards">Cards</a>
+            <a href="components.html#codes">Codes</a>
+            <a href="components.html#forms">Forms</a>
+            <a href="components.html#progressBar">Progress Bar</a>
+            <a href="components.html#tables">Tables</a>
         </div>
         <button class="dropdown-btn">Utilities 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#helpers">Helpers</a>
-            <a href="#images">Images</a>
-            <a href="#lists">Lists</a>
-            <a href="#typo">Typography</a>
+            <a href="utilities.html#helpers">Helpers</a>
+            <a href="utilities.html#images">Images</a>
+            <a href="utilities.html#lists">Lists</a>
+            <a href="utilities.html#typo">Typography</a>
         </div>          
-	</div>
-    
-    <!-- Main -->
-    <div class="main">
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-12 border">
-    				<h5 id="setup">| Setup Lighter</h5>
-    				<hr>
-    				<p>The installation of lighter is very simple, you can install it as a file or import it as a flavor with cdn.
-    				</p>
-    			<div class="col-6 border-blue">
-    				<h6 class="text-underline">Using cdn</h6>
-    				<p>Using this CDN on the head section in your file HTML.</p>
-    				<pre> <!-- CDN Code -->
+    </div>
+
+
+</div>
+</aside>
+<!-- Main -->
+<div class="post">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-purpple"><a href="##">#</a> Getting Started</h3>
+                <hr>
+                <p>The installation of lighter is very simple, you can install it as a file or import it as a <b>flavor</b> with <b>cdn</b>.</p>
+                <h5 class="text-purpple">Using CDN.</h5>
+                    <p>Use this CDN on the head section in your file HTML.</p>
+                    <pre> <!-- CDN Code -->
                       <code class="language-html">
 &lt;link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lighter/master/lighter.min.css" />                           
                       </code>
-                    </pre>
-                </div>
-                <div class="col-6 border-blue">
-                	<h6 class="text-underline">Download the minified file</h6>
-                	<p>you need only a file to start your work, the minified file is too light, only has 10KB.</p><br>
-                	<a href="https://raw.githubusercontent.com/amine1107/lighter/master/lighter.min.css" class="btn success" download>Download</a>
-                </div>
-                <div class="col-12 border-blue">
-                	<h6 class="text-underline">Clone Lighter using Git</h6>
-                	<p>You can Also clone Lightx using <b>Git</b></p>
-                	<pre>
-                       <code class="language-bash">
-$git clone https://github.com/amine1107/lighter.git
-                       </code>
-                	</pre>
-                    <h6 class="text-underline">Using Npm</h6>
-                    <p>You can install Lighter as a npm package</p>
-                    <pre>
-                       <code class="language-bash">
-$npm i lighter.css
-                       </code>
-                    </pre>
-                </div>
-                <div class="col-8">
-                	<p class="text-info"><i class="fas fa-info fa-lg"></i>Lighter needs jquery to create a responsive menu, we'll see later how to create it</p>
-                </div>
-            </div>
-           
-            <div class="col-12 border">
-                <h4>| Layouts</h4>
-            	<h5 id="grids">| Grids System</h5>
-                <hr>
-            	<p>The system of grids in web design is very interesting, lighter offers you a powerful system that contains 12 responsive columns.</p>
-            	<!-- The grids -->
-            	<div class="grid-display">
-            		<div class="row">
-            			<div class="col-1">
-            				<p>
-            					one
-            				</p>
-            			</div>
-            			<div class="col-11">
-            				<p>
-            					eleven
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-2">
-            				<p>
-            					two
-            				</p>
-            			</div>
-            			<div class="col-10">
-            				<p>
-            					ten
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-3">
-            				<p>
-            					three
-            				</p>
-            			</div>
-            			<div class="col-9">
-            				<p>
-            					nine
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-4">
-            				<p>
-            					four
-            				</p>
-            			</div>
-            			<div class="col-8">
-            				<p>
-            					eight
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-5">
-            				<p>
-            					five
-            				</p>
-            			</div>
-            			<div class="col-7">
-            				<p>
-            					seven
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-6">
-            				<p>
-            					six
-            				</p>
-            			</div>
-            			<div class="col-6">
-            				<p>
-            					six
-            				</p>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-12">
-            				<p>
-            					twelve
-            				</p>
-            			</div>
-            		</div>
-            	</div>
-            	<h5 id="containers">| Containers</h5>
-                <hr>
-            	<p>the container helps you create a structured and clean page, <b>Lightx</b> uses a width of 90% to give you a very good layout. </p>
-            	<div class="grid-display">
-            		<div class="row">
-            			<div class="col-12">
-            				<p>Container</p>
-            				<div class="col-12">
-            					<p>row</p>
-            					<div class="col-4">
-            						<p>Colmun</p>
-            					</div>
-            					<div class="col-4">
-            						<p>Colmun</p>
-            					</div>
-            					<div class="col-4">
-            						<p>Colmun</p>
-            					</div>
-            				</div>
-            			</div>
-            		</div>
-            	</div>
-            	<h6 class="text-underline">Exemple:</h6>
-            	<pre><code class="language-html">
-&lt;div class="container">
-  &lt;!-- This contain a row and colmuns -->
-&lt;/div>              		
-            	</code></pre>
-            	<p>You can also use the container fluid, large then container.</p>
-            	<h6 class="text-underline">Exemple:</h6>
-            	<pre><code class="language-html">
-&lt;div class="container-fluid">
-  &lt;!-- This contain a row and colmuns -->
-&lt;/div>              		
-            	</code></pre>
-            	<h5 id="row">| Row</h5>
-                <hr>
-            	<p>Row property specifies a grid item's size and location in a grid layout, is a part of container, and contains all colmuns.</p>
-            	<pre><code class="language-html">
-&lt;div class="container">
-  &lt;div class="row">
-  &lt;!-- This contain colmuns -->
-  &lt;/div>
-&lt;/div>              		
-            	</code></pre>
-            	<h5 id="colmuns">| Colmuns</h5>
-                <hr>
-            	<p><b>Lighter</b> offers you a responsive 12 Colmuns. </p>
-            	<p class=" text-center text-info">Responsive means that all content in your layout are compatible with all devices</p>
-            	<div class="col-6 border">
-            		<h5 class="text-center">Large Screen</h5>
-            		<hr>
-            		<div class="grid-display">
-            			<div class="col-3">
-            				<p>Some text ....</p>
-            			</div>
-            			<div class="col-3">
-            				<p>Some text ....</p>
-            			</div>
-            			<div class="col-3">
-            				<p>Some text ....</p>
-            			</div>
-            			<div class="col-3">
-            				<p>Some text ....</p>
-            			</div>
-            		</div>
-            	</div>
-            	<div class="col-6 border">
-            		<h5 class="text-center">Small Screen</h5>
-            		<hr>
-            		<div class="grid-display">
-            			<div class="col-12">
-            				<p>Some text ....</p>
-            			</div>
-            		</div>
-            	</div>
-            	<div class="col-6">
-                 <pre><code class="language-html">
-&lt;div class="container">
-  &lt;div class="row">
-    &lt;div class="col-6">
-       &lt;p>Hello world>&lt;/p>
-    &lt;/div>
-    &lt;div class="col-6">
-       &lt;p>Hello world>&lt;/p>
-    &lt;/div>
-    &lt;div class="col-12">
-       &lt;p>Hello world>&lt;/p>
-    &lt;/div>
-  &lt;/div>
-&lt;/div>              		
-            	  </code></pre>
-            	</div>
-            	<div class="col-6">
-            		<h6>Exemple:</h6>
-            		<div class="grid-display">
-            			<div class="col-6">
-            				<p>
-            					col-6
-            				</p>
-            			</div>
-            			<div class="col-6">
-            				<p>
-            					col-6
-            				</p>
-            			</div>
-            			<div class="col-12">
-            				<p>
-            					col-12
-            				</p>
-            			</div>
-            		</div>
-            	</div>
-                <div class="col-12">
-                    <h5 id="navbar">| Navbar</h5>
+                    </pre><br><br>
+                <h5 class="text-purpple">Download the minified file</h5>
+                    <p>you need only a file to start your work, the minified file is too light, only has 10KB.</p>
+                    <a href="https://raw.githubusercontent.com/amine1107/lighter/master/lighter.min.css" class="btn success" download>Download</a><br><br> 
+
+                     <div class="col-6 border">
+                       <h5 class="text-purpple">Using Git</h5>
+                       <hr>
+                       <p>You can use Git bash for Windows or Git for MAC and Linux to use Lighter.Clone this repo to your local machine using :</p>
+                       <hr>
+                    <p class="docs">$ git clone https://github.com/amine1107/lighter.git</p>
+                     </div>
+                    <div class="col-6 border">
+                      <h5 class="text-purpple">Using Npm</h5>
+                      <hr>
+                    <p>You can install Lighter as a npm package, This release contains source files as well as the compiled CSS.</p>
                     <hr>
-                    <h6>Exemple :</h6>
-                    <nav class="navbar">
-                        <a href="#" class="toggle">
-                            <h5>|||</h5>
-                        </a>
-                        <a href="#" class="brand">Brand</a>
-                        <div class="link-left">
-                            <a href="#" class="link">Link 1</a>
-                            <a href="#" class="link">Link 2</a>
-                        </div>
-                        <div class="link-right">
-                            <a href="#" class="link">Right Link 2</a>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-6">
-                    <h6>Code :</h6>
-                    <pre>
-                        <code class="language-html">
-&lt;nav class="navbar">
-    &lt;a href="#" class="toggle">
-        &lt;h5>|||&lt;/h5>
-    &lt;/a>
-    &lt;a href="#" class="brand">Brand&lt;/a>
-    &lt;div class="link-left">
-        &lt;a href="#" class="link">Link 1&lt;/a>
-        &lt;a href="#" class="link">Link 2&lt;/a>
-    &lt;/div>
-    &lt;div class="link-right">
-        &lt;a href="#" class="link">Right Link 2&lt;/a>
-    &lt;/div>
-&lt;/nav>                            
-                        </code>
-                    </pre>
-                </div>
-                    
-                    <div class="col-6">
-                        <h6 class="text-info">you can use the class <b>.link-right</b> to choose the location of the link.</h6>
-                    <h6>Use Jquery for responsive Navbar :</h6>
-                        <pre>
-                            <code class="language-jquery">
-$(".toggle").on("click", function () {
-  $(".toggle").parent().toggleClass('active');
-});                                
-                            </code>
-                        </pre>
+                    <p class="docs">$ npm i lighter.css</p>
                     </div>
-                </div>
-            </div>
+                    <h3 class="text-purpple">Setup</h3> 
+                    <hr>
+                    <h5 class="text-purpple">Running the tests</h5> 
+                    <p>You can simply add Lighter to your file Html.
+                     add the following line inside your HTML page's :</p>
+                     <pre> <!-- CDN Code -->
+                      <code class="language-html">
+&lt;link rel="stylesheet" type="text/css" media="screen" href="../css/lighter.min.css" />                           
+                      </code>
+                    </pre>
+                    <h3 class="text-purpple"><a href="##">#</a> Starter Code</h3>
+                    <hr>
+                    <p>You can start with this simple code:</p>
+                    <pre> <!-- CDN Code -->
+                      <code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;!-- The charset attribute specifies the character encoding for the HTML document -->
+    &lt;meta charset="utf-8" /> 
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;!-- The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen --> 
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;title>Lighter Css Micro Framework&lt;/title>
+    &lt;!-- Favicon -->
+    &lt;link rel="icon" href="../favicon.png">
+    &lt;!-- Import the minfied file of Lighter --> 
+    &lt;link rel="stylesheet" type="text/css" media="screen" href="../css/lighter.min.css" /> 
+  &lt;/head>
+  &lt;body>
 
+    &lt;!-- Your Content should be Here -->
+    &lt;h1>Hello World!&lt;/h1>
+
+  &lt;/body>
+&lt;/html>                     
+                      </code>
+            </div>
         </div>
-
-
-        <!-- =====================================
-             Components 
-             ===================================== -->
-        <div class="col-12 border">
-            <h4>| Components</h4>
-            <h5 id="block">| Blockquotes</h5>
-            <hr>
-            <div class="col-6">
-                <h6>Exemple:</h6>
-                <blockquote>
-                    “ What one programmer can do in one month, two programmers can do in two months.” - Fred Brooks
-                </blockquote>
-            </div>
-            <div class="col-6">
-                <h6>Code :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;blockquote>
-    “ What one programmer can do in one month, two programmers can do in two months.” - Fred Brooks
-&lt;/blockquote>                            
-                    </code>
-                </pre>
-            </div>
-            <h5 id="buttons">| Buttons</h5>
-            <hr>
-            <div class="btn-groupe">
-                <button class="btn">default</button>
-                <button class="btn primary">primary</button>
-                <button class="btn success">success</button>
-                <button class="btn warning">warning</button>
-                <button class="btn disabled">disabled</button>
-            </div>
-            <pre>
-                <code class="language-html">
-&lt;button class="btn">default&lt;/button>
-&lt;button class="btn primary">primary&lt;/button>
-&lt;button class="btn success">success&lt;/button>
-&lt;button class="btn warning">warning&lt;/button>
-&lt;button class="btn disabled">disabled&lt;/button>                    
-                </code>
-            </pre>
-            <h6>Border Buttons</h6>
-            <div class="btn-groupe">
-                <button class="btn border">Button</button>
-                <button class="btn border rever">Button</button>
-                <button class="btn border emerald">Button</button>
-                <button class="btn border asphalt">Button</button>
-            </div>
-            <pre>
-                <code class="language-html">
-&lt;button class="btn border">Button&lt;/button>                    
-                </code>
-            </pre>
-            <h6>Button color</h6>
-            <div class="col-12">
-                <table class="full-width">
-                    <thead>
-                        <tr>
-                            <th>Button Class</th>
-                            <th>Color</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>btn</td>
-                            <td><div class="btn"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn primary</td>
-                            <td><div class="btn primary"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn success</td>
-                            <td><div class="btn success"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn warning</td>
-                            <td><div class="btn warning"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn turquoise</td>
-                            <td><div class="btn turquoise"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn emerald</td>
-                            <td><div class="btn emerald"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn rever</td>
-                            <td><div class="btn rever"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn amethyst</td>
-                            <td><div class="btn amethyst"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn asphalt</td>
-                            <td><div class="btn asphalt"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn blue</td>
-                            <td><div class="btn blue"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn red</td>
-                            <td><div class="btn red"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn orange</td>
-                            <td><div class="btn orange"></div></td>
-                        </tr>
-                        <tr>
-                            <td>btn black</td>
-                            <td><div class="btn black"></div></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h6>Font Button</h6>
-            <div class="col-6">
-                <h6>Exemple : </h6>
-                <button class="btn primary"><i class="fas fa-download"></i> Download</button>
-            </div>
-            <div class="col-6">
-                <h6>Code :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;button class="btn primary">&lt;i class="fas fa-download">&lt;/i>Button&lt;/button>                                            
-                    </code>
-                </pre>
-            </div>
-            <h6>Button size</h6>
-            <div class="btn-groupe">
-                <button class="btn primary vsmall">button</button>
-                <button class="btn primary small">button</button>
-                <button class="btn primary large">button</button>
-                <button class="btn primary vlarge">button</button>
-            </div>
-            <p>You can costumize your button width adding a simple class <span class="text-red text-bg-smoke">vsmall</span> wich means very small, <span class="text-red text-bg-smoke">small</span>, <span class="text-red text-bg-smoke">large</span> or <span class="text-red text-bg-smoke">vlarge</span>.</p>
-
-            <h5 id="cards">| Cards</h5>
-            <hr>
-            <h6>Exemple :</h6>
-            <section class="cards">
-                <article class="card">
-                    <a href="#">
-                        <img src="../assets/img/lighter.png">
-                        <div class="card-content">
-                            <h2>Heading</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </a>
-                </article>
-            </section>
-            <h6>Code :</h6>
-            <pre>
-                <code class="language-html">
-&lt;section class="cards">
-    &lt;article class="card">
-        &lt;a href="#">
-            &lt;img src="../path/img.png">
-            &lt;div class="card-content">
-                &lt;h2>Heading&lt;/h2>
-                &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.&lt;/p>
-            &lt;/div>
-         &lt;/a>
-    &lt;/article>
-&lt;/section>                    
-                </code>
-            </pre>
-            <h5 id="codes">| Codes</h5>
-            <hr>
-            <h6>Exemple :</h6>
-            <div class="col-4">
-                           <pre>
-                <code class="language-css">
-h1 {
-    color: red;
-    font-size: 16px;
-}                    
-                </code>
-            </pre>
-            </div>
-            <div class="col-4">
-                <h6>Code :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;pre>
-  &lt;code>
-&lt;div class="row">
-  &lt;!-- Your code -->
-&lt;/div>
-  &lt;/code>
-&lt;/pre>                              
-                    </code>
-                </pre>
-            </div>
-            <h5 id="forms">| Forms</h5>
-            <hr>
-            <div class="col-6 border">
-                <h6>Exemple :</h6>
-                <form>
-                    <label>Name*</label>
-                    <input type="text" name="" placeholder="Your name">
-                    <label>Email*</label>
-                    <input type="text" name="" placeholder="Your email">
-                    <select>
-                        <option>Web Developer</option>
-                        <option>Software Developer</option>
-                    </select>
-                    <label>Message</label>
-                    <textarea></textarea>
-                    <input type="submit" class="btn success" name="" value="Submit">
-                </form>
-            </div>
-            <div class="col-6">
-                <h6>Code :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;form>
- &lt;label>Name&lt;/label>
- &lt;input type="text" name="" placeholder="Your name">
- &lt;label>Email&lt;/label>
- &lt;input type="text" name="" placeholder="Your email">
- &lt;select>
-  &lt;option>Web Developer&lt;/option>
-  &lt;option>Software Developer&lt;/option>
- &lt;/select>
- &lt;label>Message&lt;/label>
- &lt;textarea>&lt;/textarea>
- &lt;input type="submit" name="" class="btn success" value="Submit">
-&lt;/form>                        
-                    </code>
-                </pre>
-            </div>
-            <h5 id="progressBar">| Progress Bar</h5>
-            
-            <div class="col-6">
-                <h6>Exemple :</h6>
-                <div class="progress">
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div class="col-6">
-                <h6>Code</h6>
-                <pre>
-                    <code class="language-html">
-&lt;div class="progress">
-  &lt;div class="bar">&lt;/div>
-&lt;/div>                       
-                    </code>
-                </pre>
-            </div>
-            <h5 id="tables">| Tables</h5>
-            <div class="col-6">
-                <h6>Exemple :</h6>
-                <table class="full-width">
-                    <thead>
-                        <tr>
-                            <th>City</th>
-                            <th>Population</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Algiers</td>
-                            <td>7 Million</td>
-                        </tr>
-                        <tr>
-                            <td>Oran</td>
-                            <td>1 Million</td>
-                        </tr>
-                        <tr>
-                            <td>Costantine</td>
-                            <td>900 Miles</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-6">
-                <h6>Code :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;table class="full-width">
-    &lt;thead>
-        &lt;tr>
-            &lt;th>City&lt;/th>
-            &lt;th>Population&lt;/th>
-        &lt;/tr>
-    &lt;/thead>
-    &lt;tbody>
-        &lt;tr>
-            &lt;td>Algiers&lt;/td>
-            &lt;td>7 Million&lt;/td>
-        &lt;/tr>
-        &lt;tr>
-            &lt;td>Oran&lt;/td>
-            &lt;td>1 Million&lt;/td>
-        &lt;/tr>
-        &lt;tr>
-            &lt;td>Costantine&lt;/td>
-            &lt;td>900 Miles&lt;/td>
-        &lt;/tr>
-    &lt;/tbody>
-&lt;/table>
-                        
-                    </code>
-                </pre>
-            </div>
-        </div> 
-        <div class="col-12 border">
-            <h4>| Utilities</h4>
-            <h5 id="helpers">| Helpers</h5>
-            <hr>
-            <div class="col-6 border">
-                <h6>Position :</h6>
-                <p>You can use the class <span class="text-red">.float-right</span> or <span class="text-red">.float-left</span> to indicate the position of an items</p>
-                <h6>Exemple :</h6>
-                <pre>
-                    <code class="language-html">
-&lt;button class="float-right">Button&lt;/button>
-&lt;button class="float-left">Button&lt;/button>                         
-                    </code>
-                </pre>
-            </div>
-            <div class="col-6 border">
-                <h6>Text Position :</h6>
-                <h6><span class="text-red">.text-center</span></h6>
-                <p class="text-info text-center">Text Center</p>
-                <h6><span class="text-red">.text-right</span></h6>
-                <p class="text-info text-right">Text Right</p>
-                <h6><span class="text-red">.text-left</span></h6>
-                <p class="text-info text-left">Text Left</p>
-            </div>
-            <div class="col-6 border">
-                <h6>Text Info :</h6>
-                <p class="text-info">I am a text with the class <span class="text-red">.text-info</span>.</p>
-                <p class="text-success">I am a text with the class <span class="text-red">.text-success</span>.</p>
-                <p class="text-warning">I am a text with the class <span class="text-red">.text-warning</span>.</p>
-                <p class="text-error">I am a text with the class <span class="text-red">.text-error</span>.</p>
-            </div>
-            <div class="col-6 border">
-                <h6>Text Option:</h6>
-                <p class="text-overline">I am a text with the class <span class="text-red">.text-overline</span>.</p>
-                <p class="text-linethrough">I am a text with the class <span class="text-red">.text-linethrough</span>.</p>
-                <p class="text-underline">I am a text with the class <span class="text-red">.text-underline</span>.</p>
-            </div>
-            <h5 id="images">| Images</h5>
-            <hr>
-            <div class="col-6">
-                <p>Lighter offers you a responsive image</p>
-                <img class="full-width" src="../assets/img/lighter.png">
-            </div>
-            <h5 id="lists">| Lists</h5>
-            <hr>
-           <div class="col-9 border">
-                <p>Lightx has three types of lists: The unordered list use ul element will be marked with a outline circles, the ordered list use ol element and your items will be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
-            <h6>Unordered List :</h6>
-            <ul>
-                <li>Algeria</li>
-                <li>Morocco</li>
-                <li>Tunisia</li>
-            </ul>
-            <h6>Ordered List :</h6>
-            <ol>
-                <li>Lighter</li>
-                <li>Hexa</li>
-            </ol>
-            <h6>Description List :</h6>
-            <dl>
-                <li>Install Lighter</li>
-                <li>Create what you want</li>
-            </dl>
-           </div>
-           <h5 id="typo">| Typography</h5>
-          <div class="col-6 border">
-              <h1>Heading | <span class="text-red"> H1</span></h1>
-              <h2>Heading | <span class="text-red"> H2</span></h2>
-              <h3>Heading | <span class="text-red"> H3</span></h3>
-              <h4>Heading | <span class="text-red"> H4</span></h4>
-              <h5>Heading | <span class="text-red"> H5</span></h5>
-              <h6>Heading | <span class="text-red"> H6</span></h6>
-          </div>
-        </div>    
-    </div>
+    </div>   
 </div>
 
-	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="../assets/js/prism.js"></script>
     <!-- Dropdown Script -->
-	<script>
-		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-		var dropdown = document.getElementsByClassName("dropdown-btn");
-		var i;
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
 
-		for (i = 0; i < dropdown.length; i++) {
-			dropdown[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var dropdownContent = this.nextElementSibling;
-				if (dropdownContent.style.display === "block") {
-					dropdownContent.style.display = "none";
-				} else {
-					dropdownContent.style.display = "block";
-				}
-			});
-		}
-	</script>
-	</body>
-	</html>
+      for (i = 0; i < dropdown.length; i++) {
+         dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+               dropdownContent.style.display = "none";
+           } else {
+               dropdownContent.style.display = "block";
+           }
+       });
+     }
+ </script>
+ <!-- Sidenav -->
+ <script type="text/javascript">
+    var sidebarToggle = document.getElementById("sidebar-toggle");
+
+    sidebarToggle.addEventListener("click", function() {
+      document.body.classList.toggle("close");
+  });
+
+    $('h2').on("touchstart",function (){
+  //simply starts listening for touchstart - allows for hover state on touch devices
+});
+</script>
+</body>
+</html>

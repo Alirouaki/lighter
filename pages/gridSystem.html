@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lighter | Grid System</title>
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
+    <link href="../assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+</head>
+<body class="docBody">
+
+
+        <!-- Sidenav -->
+   <div id="sidebar-toggle">
+      <span id="sidebar-toggle-1"></span>
+      <span id="sidebar-toggle-2"></span>
+      <span id="sidebar-toggle-3"></span>
+  </div>
+  <aside class="sidebar">
+      <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
+      <div class="sidebar-nav text-center">
+        
+        <a href="../index.html">Home</a>
+        <a href="docs.html">Getting Started</a> 
+        <a href="tio.html">Try it</a>
+        <hr><!-- End Getting started -->
+        <button class="dropdown-btn">Layouts 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="gridSystem.html#grids">Grid System</a>
+            <a href="gridSystem.html#containers">Containers</a>
+            <a href="gridSystem.html#row">Rows</a>
+            <a href="gridSystem.html#colmuns">Colmuns</a>
+            <a href="gridSystem.html#navbar">Navbars</a>
+        </div> 
+        <button class="dropdown-btn">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="components.html#accordion">Accordion</a>
+            <a href="components.html#block">Blockquotes</a>
+            <a href="components.html#buttons">Buttons</a>
+            <a href="components.html#cards">Cards</a>
+            <a href="components.html#codes">Codes</a>
+            <a href="components.html#forms">Forms</a>
+            <a href="components.html#progressBar">Progress Bar</a>
+            <a href="components.html#tables">Tables</a>
+        </div>
+        <button class="dropdown-btn">Utilities 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="utilities.html#helpers">Helpers</a>
+            <a href="utilities.html#images">Images</a>
+            <a href="utilities.html#lists">Lists</a>
+            <a href="utilities.html#typo">Typography</a>
+        </div>          
+    </div>
+</div>
+</aside>
+<!-- Main -->
+<div class="post">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h4 id="grids" class="text-purpple"><a href="##">#</a> Grid System</h4>
+                <hr>
+                <p>The system of grids in web design is very interesting, lighter offers you a powerful system that contains 12 responsive columns.</p>
+                <!-- The grids -->
+                <div class="grid-display">
+                    <div class="row">
+                        <div class="col-1">
+                            <p>
+                                one
+                            </p>
+                        </div>
+                        <div class="col-11">
+                            <p>
+                                eleven
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>
+                                two
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                ten
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <p>
+                                three
+                            </p>
+                        </div>
+                        <div class="col-9">
+                            <p>
+                                nine
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>
+                                four
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>
+                                eight
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p>
+                                five
+                            </p>
+                        </div>
+                        <div class="col-7">
+                            <p>
+                                seven
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                                six
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                six
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                twelve
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h4 id="containers" class="text-purpple"><a href="##">#</a> Containers</h4>
+                <hr>
+                <p>the container helps you create a structured and clean page, <strong>Lighter</strong> uses a width of 90% to give you a very good layout. </p>
+                <div class="grid-display">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Container</p>
+                            <div class="col-12">
+                                <p>row</p>
+                                <div class="col-4">
+                                    <p>Colmun</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Colmun</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Colmun</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="text-underline">Code:</h6>
+                <pre><code class="language-html">
+&lt;div class="container">
+  &lt;!-- This contain a row and colmuns -->
+&lt;/div>                   
+                </code></pre>
+                <p>You can also use the container fluid, large then container.</p>
+                <h6 class="text-underline">Code:</h6>
+                <pre><code class="language-html">
+&lt;div class="container-fluid">
+  &lt;!-- This contain a row and colmuns -->
+&lt;/div>                   
+                </code></pre>
+                <p class="text-info">Depending on the width of the viewport that the webpage is being viewed on, the <b>.container</b> class gives its div a specific fixed width. These lines don't exist in any form for <b>.container-fluid</b>, so its width changes every time the viewport width changes.</p>
+
+                <h4 id="row" class="text-purpple"><a href="##">#</a> Rows</h4>
+                <hr>
+                <p>Row property specifies a grid item's size and location in a grid layout, is a part of container, and contains all colmuns.</p>
+                <h6 class="text-underline">Code:</h6>
+                <pre><code class="language-html">
+&lt;div class="container">
+  &lt;div class="row">
+  &lt;!-- This contain colmuns -->
+  &lt;/div>
+&lt;/div>                   
+                </code></pre>
+
+                <h4 id="colmuns" class="text-purpple"><a href="##">#</a> Colmuns</h4>
+                <hr>
+                <p><b>Lighter</b> offers you a responsive 12 Colmuns. </p>
+                <p class=" text-center text-info">Responsive means that all content in your layout are compatible with all devices</p>
+                <div class="col-6 border">
+                    <h5 class="text-center">Large Screen</h5>
+                    <hr>
+                    <div class="grid-display">
+                        <div class="col-3">
+                            <p>Some text ....</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Some text ....</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Some text ....</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Some text ....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 border">
+                    <h5 class="text-center">Small Screen</h5>
+                    <hr>
+                    <div class="grid-display">
+                        <div class="col-12">
+                            <p>Some text ....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                 <pre><code class="language-html">
+&lt;div class="container">
+  &lt;div class="row">
+    &lt;div class="col-6">
+       &lt;p>Hello world>&lt;/p>
+    &lt;/div>
+    &lt;div class="col-6">
+       &lt;p>Hello world>&lt;/p>
+    &lt;/div>
+    &lt;div class="col-12">
+       &lt;p>Hello world>&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>                   
+                  </code></pre>
+                </div>
+                <div class="col-6">
+                    <h6>Exemple:</h6>
+                    <div class="grid-display">
+                        <div class="col-6">
+                            <p>
+                                col-6
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                col-6
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                col-12
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+
+                <h4 id="navbar" class="text-purpple"><a href="##">#</a> Navbars</h4>
+                <hr>
+                <h6 class="text-underline">Exemple :</h6>
+                    <nav class="navbar">
+                        <a href="#" class="toggle">
+                            <h5>|||</h5>
+                        </a>
+                        <a href="#" class="brand">Brand</a>
+                        <div class="link-left">
+                            <a href="#" class="link">Link 1</a>
+                            <a href="#" class="link">Link 2</a>
+                        </div>
+                        <div class="link-right">
+                            <a href="#" class="link">Right Link 2</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-underline">Code :</h6>
+                    <pre>
+                        <code class="language-html">
+&lt;nav class="navbar">
+    &lt;a href="#" class="toggle">
+        &lt;h5>|||&lt;/h5>
+    &lt;/a>
+    &lt;a href="#" class="brand">Brand&lt;/a>
+    &lt;div class="link-left">
+        &lt;a href="#" class="link">Link 1&lt;/a>
+        &lt;a href="#" class="link">Link 2&lt;/a>
+    &lt;/div>
+    &lt;div class="link-right">
+        &lt;a href="#" class="link">Right Link 2&lt;/a>
+    &lt;/div>
+&lt;/nav>                            
+                        </code>
+                    </pre>
+                </div>
+                    
+                    <div class="col-6">
+                        <p class="text-info">you can use the class <b>.link-right</b> to choose the location of the link.</h6>
+                    <h6>Use Jquery for responsive Navbar :</p>
+                        <pre>
+                            <code class="language-jquery">
+$(".toggle").on("click", function () {
+  $(".toggle").parent().toggleClass('active');
+});                                
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="../assets/js/prism.js"></script>
+<!-- Dropdown Script -->
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+     dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+           dropdownContent.style.display = "none";
+       } else {
+           dropdownContent.style.display = "block";
+       }
+   });
+ }
+</script>
+<!-- Sidenav -->
+<script type="text/javascript">
+    var sidebarToggle = document.getElementById("sidebar-toggle");
+
+    sidebarToggle.addEventListener("click", function() {
+      document.body.classList.toggle("close");
+  });
+
+    $('h2').on("touchstart",function (){
+  //simply starts listening for touchstart - allows for hover state on touch devices
+});
+</script>
+</body>
+</html>

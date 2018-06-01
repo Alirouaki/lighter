@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lighter | Getting Started</title>
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
+    <link href="../assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+</head>
+<body class="docBody">
+
+
+    <!-- Sidenav -->
+   <div id="sidebar-toggle">
+      <span id="sidebar-toggle-1"></span>
+      <span id="sidebar-toggle-2"></span>
+      <span id="sidebar-toggle-3"></span>
+  </div>
+  <aside class="sidebar">
+      <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
+      <div class="sidebar-nav text-center">
+        
+        <a href="../index.html">Home</a>
+        <a href="docs.html">Getting Started</a> 
+        <a href="tio.html">Try it</a>
+        <hr><!-- End Getting started -->
+        <button class="dropdown-btn">Layouts 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="gridSystem.html#grids">Grid System</a>
+            <a href="gridSystem.html#containers">Containers</a>
+            <a href="gridSystem.html#row">Rows</a>
+            <a href="gridSystem.html#colmuns">Colmuns</a>
+            <a href="gridSystem.html#navbar">Navbars</a>
+        </div> 
+        <button class="dropdown-btn">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="components.html#accordion">Accordion</a>
+            <a href="components.html#block">Blockquotes</a>
+            <a href="components.html#buttons">Buttons</a>
+            <a href="components.html#cards">Cards</a>
+            <a href="components.html#codes">Codes</a>
+            <a href="components.html#forms">Forms</a>
+            <a href="components.html#progressBar">Progress Bar</a>
+            <a href="components.html#tables">Tables</a>
+        </div>
+        <button class="dropdown-btn">Utilities 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="utilities.html#helpers">Helpers</a>
+            <a href="utilities.html#images">Images</a>
+            <a href="utilities.html#lists">Lists</a>
+            <a href="utilities.html#typo">Typography</a>
+        </div>          
+    </div>
+
+
+</div>
+</aside>
+<!-- Main -->
+<div class="post">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h3 id="helpers" class="text-purpple"><a href="##">#</a> Helpers</h3>
+                <hr>
+                <h6 class="text-purpple">Position :</h6>
+                <p>You can use the class <span class="text-red">.float-right</span> or <span class="text-red">.float-left</span> to indicate the position of an items.</p>
+                <h6>Exemple :</h6>
+                <pre>
+                    <code class="language-html">
+&lt;button class="float-right">Button&lt;/button>
+&lt;button class="float-left">Button&lt;/button>                         
+                    </code>
+                </pre>
+                <h6 class="text-purpple">Text Position :</h6>
+                <h6><span class="text-red">.text-center</span></h6>
+                <p class="text-info text-center">Text Center</p>
+                <h6><span class="text-red">.text-right</span></h6>
+                <p class="text-info text-right">Text Right</p>
+                <h6><span class="text-red">.text-left</span></h6>
+                <p class="text-info text-left">Text Left</p>
+                <h6 class="text-purpple">Text Info :</h6>
+                <p class="text-info">I am a text with the class <span class="text-red">.text-info</span>.</p>
+                <p class="text-success">I am a text with the class <span class="text-red">.text-success</span>.</p>
+                <p class="text-warning">I am a text with the class <span class="text-red">.text-warning</span>.</p>
+                <p class="text-error">I am a text with the class <span class="text-red">.text-error</span>.</p>
+                <h6 class="text-purpple">Text Option:</h6>
+                <p class="text-overline">I am a text with the class <span class="text-red">.text-overline</span>.</p>
+                <p class="text-linethrough">I am a text with the class <span class="text-red">.text-linethrough</span>.</p>
+                <p class="text-underline">I am a text with the class <span class="text-red">.text-underline</span>.</p>
+            </div>
+            <div class="col-12">
+                <h3 id="images" class="text-purpple"><a href="##">#</a> Images</h3>
+                <hr>
+                <p>Lighter offers you a responsive image.</p>
+                 <div class="col-4">
+                  <img src="holder.js/500x200">
+                </div>
+                <div class="col-4">
+                  <img src="holder.js/500x200">
+                </div>
+                <div class="col-4">
+                  <img src="holder.js/500x200">
+                </div>
+            </div> 
+
+            <div class="col-12">
+                <h3 id="lists" class="text-purpple"><a href="##">#</a> Lists</h3>
+                <hr>
+                <div class="col-9 border">
+                    <p>Lighter has three types of lists: The unordered list use ul element will be marked with a outline circles, the ordered list use ol element and your items will be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
+                    <h6>Unordered List :</h6>
+                    <ul>
+                        <li>Algeria</li>
+                        <li>Morocco</li>
+                        <li>Tunisia</li>
+                    </ul>
+                    <h6>Ordered List :</h6>
+                    <ol>
+                        <li>Lighter</li>
+                        <li>Hexa</li>
+                    </ol>
+                    <h6>Description List :</h6>
+                    <dl>
+                        <li>Install Lighter</li>
+                        <li>Create what you want</li>
+                    </dl>
+                </div>
+            </div>    
+            <div class="col-12">
+                <h3 id="typo" class="text-purpple"><a href="##">#</a> Typography</h3>
+                <hr>   
+                <div class="col-6 border">
+              <h1>Heading | <span class="text-red"> H1</span></h1>
+              <h2>Heading | <span class="text-red"> H2</span></h2>
+              <h3>Heading | <span class="text-red"> H3</span></h3>
+              <h4>Heading | <span class="text-red"> H4</span></h4>
+              <h5>Heading | <span class="text-red"> H5</span></h5>
+              <h6>Heading | <span class="text-red"> H6</span></h6>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Holder -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.js"></script>
+    <script src="../assets/js/prism.js"></script>
+    <!-- Dropdown Script -->
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+         dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+               dropdownContent.style.display = "none";
+           } else {
+               dropdownContent.style.display = "block";
+           }
+       });
+     }
+ </script>
+ <!-- Sidenav -->
+ <script type="text/javascript">
+    var sidebarToggle = document.getElementById("sidebar-toggle");
+
+    sidebarToggle.addEventListener("click", function() {
+      document.body.classList.toggle("close");
+  });
+
+    $('h2').on("touchstart",function (){
+  //simply starts listening for touchstart - allows for hover state on touch devices
+});
+</script>
+</body>
+</html>

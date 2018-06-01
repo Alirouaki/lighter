@@ -22,9 +22,9 @@
       <div class="row">
         <div class="col-12 text-center">
           <img class="centred-img" src="assets/img/logos.png">
-          <h1 class="text-big">Lighter</h1>
+          <h1 class="text-big"><a class="zoom-fade" href="#"> Lighter</a></h1>
           <h3 class="text-center">Lightweight, Flexible, and Modern Css framework</h3>
-          <h5>V1.1.0</h5>
+          <h5>V1.1.1</h5>
           <button class="btn success scroll-down">Getting Started</button>
         </div>
       </div>
@@ -55,11 +55,11 @@
   <div class="container fluid">
     <div class="row">
       <div class="col-4 hover fruit text-center">
-        <h5>Lightweight 17KB</h5>
+        <h5>Lightweight 13KB</h5>
         <hr>
         <i class=" fas fa-tint fa-7x"></i>
         <hr>
-        <p>At less than 20 kb, <b>Lighter</b> is very light compared to the other framework.</p>
+        <p>At less than 15 kb, <b>Lighter</b> is very light compared to the other framework.</p>
       </div>
       <div class="col-4 hover sea text-center">
         <h5>Modern</h5>
@@ -74,6 +74,15 @@
         <i class=" fas fa-desktop fa-7x"></i>
         <hr>
         <p><b>Lighter</b> is tested on different devices to be compatible with all apparatus</p>
+      </div>
+      <div class="col-12">
+        <h3 class="text-center">For an Responsive Design</h3>
+        <hr>
+        <img src="assets/img/responsive.jpg">
+        <blockquote>
+          <p>Responsive web design (RWD) is an approach to web design which makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD. Content, design and performance are necessary across all devices to ensure usability and satisfaction.</p>
+          <p>__ From Wikipedia</p>
+        </blockquote>
       </div>
     </div>
   </div>
@@ -170,7 +179,7 @@ $ npm i lighter.css
         <ul>
           <li>Easy to learn</li>
           <li>Easy to use</li>
-          <li>Lightweight 17KB</li>
+          <li>Lightweight 13KB</li>
           <li>Modern</li>
           <li>12 colmun Grids</li>
           <li>Responsive</li>
@@ -179,12 +188,13 @@ $ npm i lighter.css
         </ul>
         <hr>
         <h5 class="text-underline">Sass.</h5>
-        <p>Lighter is built with Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+        <p>Lighter is built with simplified Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
         <p>Structure of Lighter Sass :</p>
         <pre>
 |---- scss
    |---- src
       |---- components
+          |---- accordion.scss
           |---- block.scss (Blockquotes)
           |---- buttons.scss
           |---- cards.scss
@@ -234,6 +244,10 @@ $ npm i lighter.css
       return false;
     });
   });
+
+            $('h2').on("touchstart",function (){
+  //simply starts listening for touchstart - allows for hover state on touch devices
+});
     </script>
 </body>
 </html>
