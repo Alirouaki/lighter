@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
     <link rel="icon" href="../assets/img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/lighter.min.css" />
     <link href="../assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
@@ -16,93 +17,111 @@
 <body class="docBody">
 
 
-        <!-- Sidenav -->
-   <div id="sidebar-toggle">
-      <span id="sidebar-toggle-1"></span>
-      <span id="sidebar-toggle-2"></span>
-      <span id="sidebar-toggle-3"></span>
-  </div>
-  <aside class="sidebar">
-      <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
-      <div class="sidebar-nav text-center">
-        
-        <a href="../index.html">Home</a>
-        <a href="docs.html">Getting Started</a> 
-        <a href="tio.html">Try it</a>
-        <hr><!-- End Getting started -->
-        <button class="dropdown-btn">Layouts 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="gridSystem.html#grids">Grid System</a>
-            <a href="gridSystem.html#containers">Containers</a>
-            <a href="gridSystem.html#row">Rows</a>
-            <a href="gridSystem.html#colmuns">Colmuns</a>
-            <a href="gridSystem.html#navbar">Navbars</a>
-        </div> 
-        <button class="dropdown-btn">Components 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="components.html#accordion">Accordion</a>
-            <a href="components.html#block">Blockquotes</a>
-            <a href="components.html#buttons">Buttons</a>
-            <a href="components.html#cards">Cards</a>
-            <a href="components.html#codes">Codes</a>
-            <a href="components.html#forms">Forms</a>
-            <a href="components.html#progressBar">Progress Bar</a>
-            <a href="components.html#tables">Tables</a>
-        </div>
-        <button class="dropdown-btn">Utilities 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="utilities.html#helpers">Helpers</a>
-            <a href="utilities.html#images">Images</a>
-            <a href="utilities.html#lists">Lists</a>
-            <a href="utilities.html#typo">Typography</a>
-        </div>          
+ <!-- Sidenav -->
+ <div id="sidebar-toggle">
+  <span id="sidebar-toggle-1"></span>
+  <span id="sidebar-toggle-2"></span>
+  <span id="sidebar-toggle-3"></span>
+</div>
+<aside class="sidebar">
+  <h2 class="sidebar-head"><a class="zoom-fade" href="../index.html">Lighter</a></h2>
+  <div class="sidebar-nav text-center">
+
+    <a href="../index.html"><i class="fas fa-home" style="color: #3742fa;"></i> Home</a>
+    <a href="docs.html"><i class="fas fa-play" style="color: #ff6348;"></i> Getting Started</a> 
+    <a href="tio.html"><i class="fas fa-code" style="color: #eb4d4b;"></i> Try it</a>
+    <hr><!-- End Getting started -->
+    <button class="dropdown-btn"><i class="fas fa-th-large" style="color: #f368e0;"></i> Layouts 
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="gridSystem.html#grids">Grid System</a>
+        <a href="gridSystem.html#containers">Containers</a>
+        <a href="gridSystem.html#row">Rows</a>
+        <a href="gridSystem.html#colmuns">Colmuns</a>
+        <a href="gridSystem.html#navbar">Navbars</a>
+    </div> 
+    <button class="dropdown-btn"><i class="fas fa-ruler-vertical" style="color: #5352ed;"></i> Components 
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="components.html#accordion">Accordion</a>
+        <a href="components.html#block">Blockquotes</a>
+        <a href="components.html#buttons">Buttons</a>
+        <a href="components.html#cards">Cards</a>
+        <a href="components.html#codes">Codes</a>
+        <a href="components.html#forms">Forms</a>
+        <a href="components.html#progressBar">Progress Bar</a>
+        <a href="components.html#tables">Tables</a>
     </div>
-
-
+    <button class="dropdown-btn"><i class="fas fa-drafting-compass" style="color: #2ed573;"></i> Utilities 
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="utilities.html#helpers">Helpers</a>
+        <a href="utilities.html#images">Images</a>
+        <a href="utilities.html#lists">Lists</a>
+        <a href="utilities.html#typo">Typography</a>
+    </div>          
+</div>
 </div>
 </aside>
 <!-- Main -->
 <div class="post">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-purpple"><a href="##">#</a> Getting Started</h3>
-                <hr>
-                <p>The installation of lighter is very simple, you can install it as a file or import it as a <b>flavor</b> with <b>cdn</b>.</p>
-                <h5 class="text-purpple">Using CDN.</h5>
-                    <p>Use this CDN on the head section in your file HTML.</p>
-                    <pre> <!-- CDN Code -->
-                      <code class="language-html">
+  <div class="container fluid">
+    <div class="row">
+      <h4 class="hr-text" data-content="Getting Started"></h4>
+      <div class="col-7 mazSec">
+        <h3>Learn Lighter</h3>
+        <p>Learn how to create a responsive website using Lighter.</p>
+        <p>This Tutoriel make you understand the basics of Lighter, and let you getting started with the framework, at the end of this tutorial you will be able to create a beautiful responsive website.</p>
+        <div class="count">
+          <ul>
+            <li class="counting"><span id="days"></span>days</li>
+            <li class="counting"><span id="hours"></span>Hours</li>
+            <li class="counting"><span id="minutes"></span>Minutes</li>
+            <li class="counting"><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+          <div class="col-5">
+              <i class="fas fa-graduation-cap fa-7x" style="color: #0097e6; font-size: 200px;"></i>
+          </div>
+            <div class="col-10">
+                <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
+                <p>The installation of lighter is very simple, you can install it as a file or import it as a <b>flavor</b> with <b>cdn</b>.</p>   
+                <h5 class="text-underline"><i class="fab fa-keycdn" style="color: #2ed573;"></i> CDN</h5>
+                <p>Use this CDN on the head section in your file HTML.</p> 
+                <pre> <!-- CDN Code -->
+                    <code class="language-html">
 &lt;link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lighter/master/lighter.min.css" />                           
-                      </code>
-                    </pre><br><br>
-                <h5 class="text-purpple">Download the minified file</h5>
-                    <p>you need only a file to start your work, the minified file is too light, only has 10KB.</p>
-                    <a href="https://raw.githubusercontent.com/amine1107/lighter/master/lighter.min.css" class="btn success" download>Download</a><br><br> 
-
-                     <div class="col-6 border">
-                       <h5 class="text-purpple">Using Git</h5>
-                       <hr>
-                       <p>You can use Git bash for Windows or Git for MAC and Linux to use Lighter.Clone this repo to your local machine using :</p>
-                       <hr>
-                    <p class="docs">$ git clone https://github.com/amine1107/lighter.git</p>
-                     </div>
-                    <div class="col-6 border">
-                      <h5 class="text-purpple">Using Npm</h5>
-                      <hr>
-                    <p>You can install Lighter as a npm package, This release contains source files as well as the compiled CSS.</p>
-                    <hr>
-                    <p class="docs">$ npm i lighter.css</p>
-                    </div>
-                    <h3 class="text-purpple">Setup</h3> 
-                    <hr>
-                    <h5 class="text-purpple">Running the tests</h5> 
+                    </code>
+                </pre><br><br>
+                <h5 class="text-underline">Download</h5>
+                <p>You need only a file to start your work, the minified file is too light, only has 13KB.</p>
+                <a href="https://raw.githubusercontent.com/amine1107/lighter/master/lighter.min.css" class="btn success" download>Download</a><br><br>
+                <h5 class="text-underline"><i class="fab fa-git-square" style="color: #fa983a;"></i> Git</h5>
+                <p>You can use Git bash for Windows or Git for MAC and Linux to use Lighter.Clone this repo to your local machine using:</p>
+                <div class="container-bash">
+                  <div id="inviteCode" class="invite-page">
+                    <input id="link" value="git clone https://github.com/amine1107/lighter.git" readonly>
+                    <div id="copy">
+                      <i class="fa fa-clipboard" aria-hidden="true" data-copytarget="#link"></i>
+                  </div>
+              </div>
+          </div>
+                <h5 class="text-underline"><i class="fab fa-npm" style="color: #fa983a;"></i> NPM</h5>
+                <p>You can install Lighter as a npm package, This release contains source files as well as the compiled CSS.</p>
+                <div class="container-bash">
+                  <div id="inviteCode" class="invite-page">
+                    <input id="link" value="npm install lighter" readonly>
+                    <div id="copy">
+                      <i class="fa fa-clipboard" aria-hidden="true" data-copytarget="#link"></i>
+                  </div>
+              </div>
+          </div>
+           <h4 class="hr-text" data-content="Setup"></h4> 
+                    <h5 class="text-underline"><i class="fas fa-file-alt" style="color: #fbc531;"></i> Running the tests</h5> 
                     <p>You can simply add Lighter to your file Html.
                      add the following line inside your HTML page's :</p>
                      <pre> <!-- CDN Code -->
@@ -110,8 +129,7 @@
 &lt;link rel="stylesheet" type="text/css" media="screen" href="../css/lighter.min.css" />                           
                       </code>
                     </pre>
-                    <h3 class="text-purpple"><a href="##">#</a> Starter Code</h3>
-                    <hr>
+                    <h5 class="text-underline"><a href="##">#</a> Starter Code</h5>
                     <p>You can start with this simple code:</p>
                     <pre> <!-- CDN Code -->
                       <code class="language-html">
@@ -137,35 +155,45 @@
   &lt;/body>
 &lt;/html>                     
                       </code>
+
             </div>
-        </div>
+
+        </div> 
     </div>   
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="../assets/js/prism.js"></script>
-    <!-- Dropdown Script -->
-    <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
 
-      for (i = 0; i < dropdown.length; i++) {
-         dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-               dropdownContent.style.display = "none";
-           } else {
-               dropdownContent.style.display = "block";
-           }
-       });
-     }
- </script>
- <!-- Sidenav -->
- <script type="text/javascript">
+
+</div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- holder -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.js"></script>
+<script src="../assets/js/prism.js"></script>
+<script type="text/javascript" src="../assets/js/app.js"></script>
+<!-- Dropdown Script -->
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+     dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+           dropdownContent.style.display = "none";
+       } else {
+           dropdownContent.style.display = "block";
+       }
+   });
+ }
+</script>
+<!-- Sidenav -->
+<script type="text/javascript">
     var sidebarToggle = document.getElementById("sidebar-toggle");
 
     sidebarToggle.addEventListener("click", function() {
@@ -175,6 +203,48 @@
     $('h2').on("touchstart",function (){
   //simply starts listening for touchstart - allows for hover state on touch devices
 });
+</script>
+
+<script type="text/javascript">
+    // functionality to copy text from inviteCode to clipboard
+
+// trigger copy event on click
+$('#copy').on('click', function(event) {
+  console.log(event);
+  copyToClipboard(event);
+});
+
+// event handler
+function copyToClipboard(e) {
+  // alert('this function was triggered');
+  // find target element
+  var
+    t = e.target, 
+    c = t.dataset.copytarget,
+    inp = (c ? document.querySelector(c) : null);
+  console.log(inp);
+  // check if input element exist and if it's selectable
+  if (inp && inp.select) {
+    // select text
+    inp.select();
+    try {
+      // copy text
+      document.execCommand('copy');
+      inp.blur();
+
+      // copied animation
+      t.classList.add('copied');
+      setTimeout(function() {
+        t.classList.remove('copied');
+      }, 1500);
+    } catch (err) {
+      //fallback in case exexCommand doesnt work
+      alert('please press Ctrl/Cmd+C to copy');
+    }
+
+  }
+
+}
 </script>
 </body>
 </html>

@@ -8,9 +8,12 @@
   <link rel="icon" href="assets/img/favicon.png">
   <!-- Font Awesome -->
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
- <link href="assets/css/prism.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="assets/css/prism.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/amine1107/Hexa/master/hexa.min.css
+  ">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/lighter.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 </head>
 <body>
@@ -21,10 +24,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <img class="centred-img" src="assets/img/logos.png">
-          <h1 class="text-big"><a class="zoom-fade" href="#"> Lighter</a></h1>
-          <h3 class="text-center">Lightweight, Flexible, and Modern Css framework</h3>
-          <h5>V1.1.1</h5>
+          <img class="centred-img hexa fadeUp" src="assets/img/logos.png">
+          <h1 class="text-big hexa fadeUp"><a href="#"> Lighter</a></h1>
+          <h5 class="text-center hexa fadeDown">Lightweight, Flexible, and Modern Css framework</h5>
+          <h3 class="text-underline">V2.0</h3>
           <button class="btn success scroll-down">Getting Started</button>
         </div>
       </div>
@@ -32,164 +35,303 @@
   </section>
 
   <!-- Menu -->
-   <!-- Header -->
+  <!-- Header -->
   <header>
 
-        <nav class="navbar menu ok">
-            <a href="#menu" class="toggle">
-                <h5>|||</h5>
-            </a>
-            <a href="amine1107.github.io/lighter" class="brand">Lighter</a>
-            <div class="link-right">
-                <a href="https://amine1107.github.io/lighter/pages/docs.html" class="link">Documentation</a>
-                <a href="https://amine1107.github.io/lighter/pages/tio.html" class="link">Try it online</a>
-                <a href="https://amine1107.github.io/Hexa" class="link">Hexa.css</a>
-              <a href="https://codepen.io/Amine1992/pen/ELmpgL" class="link"><i class="fab fa-codepen fa-lg"></i></a>
-              <a href="https://github.com/amine1107/lighter/" class="link"><i class="fab fa-github fa-lg"></i></a>
-            </div>
-        </nav>
-    </header><br>
+    <nav class="navbar menu ok">
+      <a href="#menu" class="toggle">
+        <h5>|||</h5>
+      </a>
+      <a href="amine1107.github.io/lighter" class="brand">Lighter</a>
+      <div class="link-right">
+        <a href="https://amine1107.github.io/lighter/pages/docs.html" class="link"><i class="fas fa-book" style="color: #6ab04c;"></i> Documentation</a>
+        <a href="https://amine1107.github.io/lighter/pages/tio.html" class="link"><i class="fas fa-code" style="color: #eb4d4b;"></i> Try it online</a>
+        <a href="https://amine1107.github.io/Hexa" class="link"><i class="fas fa-frog" style="color: #009432;"></i> Hexa.css</a>
+        <a href="https://codepen.io/Amine1992/pen/ELmpgL" class="link"><i class="fab fa-codepen fa-lg"></i></a>
+        <a href="https://github.com/amine1107/lighter/" class="link"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+    </nav>
+  </header><br>
   <!-- /Header -->
   
   <!-- Introduction -->
   <div class="container fluid">
     <div class="row">
-      <div class="col-4 hover fruit text-center">
-        <h5>Lightweight 13KB</h5>
+      <div class="col-8 showBox">
+        <h4>Everything you need to create a responsive website</h4>
         <hr>
-        <i class=" fas fa-tint fa-7x"></i>
-        <hr>
-        <p>At less than 15 kb, <b>Lighter</b> is very light compared to the other framework.</p>
+        <div class="btn-groupe">
+          <a href="">#Grid System</a>
+          |
+          <a href="">#Containers</a>
+          |
+          <a href="">#Rows</a>
+          |
+          <a href="">#Colmuns</a>
+          |
+          <a href="">#Navbars</a>
+          |
+          <a href="">#Accordions</a>
+          |
+          <a href="">#Blockquotes</a>
+          |
+          <a href="">#Buttons</a>
+          |
+          <a href="">#Cards</a>
+          |
+          <a href="">#Codes</a>
+          |
+          <a href="">#Forms</a>
+          |
+          <a href="">#Progress Bars</a>
+          |
+          <a href="">#Tables</a>
+          |
+          <a href="">#Helpers</a>
+          |
+          <a href="">#Images</a>
+          |
+          <a href="">#Lists</a>
+          |
+          <a href="">#Typography</a>
+        </div><br>
+        <div class="main-gallery text-center">
+          <div class="gallery-cell">
+            <div class="testimonial">
+              <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+              <q class="testimonial-quote">"One of the best CSS framework, Lightweight and Powerful"</q>
+              <span class="testimonial-author">Joe Smith, Web Designer</span>
+            </div>
+          </div>
+          <div class="gallery-cell">
+           <div class="testimonial">
+            <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg">
+            <q class="testimonial-quote">"The framework still growing, many features in this version and I hope to see him in advancement"</q>
+            <span class="testimonial-author">Leila Hadi, Freelance Web Developer</span>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="testimonial">
+            <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg">
+            <q class="testimonial-quote">"#Lighter is an impressive CSS framework. Flexbox grid, no JS, modular components"</q>
+            <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+          </div>
+        </div>
       </div>
-      <div class="col-4 hover sea text-center">
-        <h5>Modern</h5>
-        <hr>
-        <i class="fab fa-chrome fa-7x"></i>
-        <hr>
-        <p><b>Lighter</b> is created to be compatible with all browsers.</p>
-      </div>
-      <div class="col-4 hover royal text-center">
-        <h5>Responsive</h5>
-        <hr>
-        <i class=" fas fa-desktop fa-7x"></i>
-        <hr>
-        <p><b>Lighter</b> is tested on different devices to be compatible with all apparatus</p>
-      </div>
-      <div class="col-12">
-        <h3 class="text-center">For an Responsive Design</h3>
-        <hr>
-        <img src="assets/img/responsive.jpg">
-        <blockquote>
-          <p>Responsive web design (RWD) is an approach to web design which makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD. Content, design and performance are necessary across all devices to ensure usability and satisfaction.</p>
-          <p>__ From Wikipedia</p>
-        </blockquote>
-      </div>
+
+    </div><br>
+    <div class="col-4">
+      <img src="assets/img/screen01.png">
+    </div>
+    <div class="col-7">
+      <p class="text-info">Support <b>Lighter</b> on GitHub with only one Star, We encourage to do better than this</p>
+      <iframe src="https://ghbtns.com/github-btn.html?user=amine1107&repo=lighter&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    </div>
+    
+    <div class="col-12">
+      <h4 class="hr-text" data-content="For a responsive design"></h4>
+      <blockquote>
+        <p>Responsive web design (RWD) is an approach to web design which makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD. Content, design and performance are necessary across all devices to ensure usability and satisfaction.</p>
+        <p>__ From Wikipedia</p>
+      </blockquote>
+    </div>
+    <div class="col-3 text-center">
+      <i class="fas fa-feather fa-5x" style="color: #006266;"></i>
+      <h5>Lightweight</h5>
+      <p>At less than 15 kb, Lighter is very light compared to the others frameworks.</p>
+    </div>
+    <div class="col-3 text-center">
+      <i class="fab fa-chrome fa-5x" style="color: #F79F1F;"></i>
+      <h5>Modern</h5>
+      <p>Lighter is created to be compatible with all browsers. Safari, Chrome ...</p>
+    </div>
+    <div class="col-3 text-center">
+      <i class="fas fa-laptop fa-5x" style="color: #009432;"></i>
+      <h5>Responsive</h5>
+      <p>Lighter is tested on different devices to be compatible with all apparatus.</p>
+    </div>
+    <div class="col-3 text-center">
+      <i class="fas fa-rocket fa-5x" style="color: #6F1E51;"></i>
+      <h5>Faster</h5>
+      <p>Lighter is created to make the developement easy and faster.</p>
+    </div>
+    <div class="col-12">
+      <h4 class="hr-text" data-content="Responsive 12 colmuns"></h4>
+      <!-- The grids -->
+                <div class="grid-display">
+                    <div class="row">
+                        <div class="col-1">
+                            <p>
+                                one
+                            </p>
+                        </div>
+                        <div class="col-11">
+                            <p>
+                                eleven
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>
+                                two
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                ten
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <p>
+                                three
+                            </p>
+                        </div>
+                        <div class="col-9">
+                            <p>
+                                nine
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>
+                                four
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>
+                                eight
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p>
+                                five
+                            </p>
+                        </div>
+                        <div class="col-7">
+                            <p>
+                                seven
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                                six
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                six
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                twelve
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="col-8 mazSec">
+      <h3>Built with SASS</h3>
+      <p>Lighter is built with simplified Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+      <p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.</p>
+      <a href="https://sass-lang.com/" class="btn emerald">Learn more ></a>
+
+    </div>
+    <div class="col-4">
+      <img src="assets/img/sassLogo.png">
+    </div>
+    <div class="col-12 text-center">
+      <h4 class="hr-text" data-content="Free Themes"></h4>
+      <h3 style="color: #9c88ff;">Coming Soon !</h3>
+      <i class="fas fa-wrench faa-wrench animated fa-6x" style="color: #8c7ae6;"></i>
+    </div>
+
+
+<div class="col-7 mazSec">
+  <h3>Learn Lighter</h3>
+  <p>Learn how to create a responsive website using Lighter.</p>
+  <p>This Tutoriel make you understand the basics of Lighter, and let you getting started with the framework, at the end of this tutorial you will be able to create a beautiful responsive website.</p>
+  <div class="count">
+  <ul>
+    <li class="counting"><span id="days"></span>days</li>
+    <li class="counting"><span id="hours"></span>Hours</li>
+    <li class="counting"><span id="minutes"></span>Minutes</li>
+    <li class="counting"><span id="seconds"></span>Seconds</li>
+  </ul>
+  </div>
+</div>
+<div class="col-5">
+  <div class="card-grid"> 
+   <div class="card-wrap">
+    <div class="card">
+      <img src="assets/img/learnShow.png">
     </div>
   </div>
-  <!-- /Introduction -->
-
-  <div class="container fluid">
-    <div class="row">
-      <div class="col-12 mauve text-center">
-        <h5>Lighter is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work. Enjoy !.</h5>
-      </div>
-      <div class="col-12 border">
-        <h4 class="text-underline">1 - Getting Started.</h4>
-        <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
-        <h5>a - Download Lighter.</h5>
-        <p>the installation of Lighter is very simple, you can get a copy by downloading the minified file : : <a href="https://raw.githubusercontent.com/amine1107/lighter/master/lighter.min.css" download="lightx">Download</a></p>
-        <h5>b -Using CDN</h5>
-        <p>In a very simple way, you can also import the default flavor of Lightx using the CDN.</p>
-        <pre><code class="language-html"><!-- CDN Code -->
-&lt;link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lighter/master/lighter.min.css" />       
-        </code>    
-        </pre>
-        <h5>c - Using Git.</h5>
-         <pre><code class="language-git">
-$ git clone https://github.com/amine1107/lighter.git  
-        </code>        
-        </pre>
-          <h5>c - Using Npm.</h5>
-         <pre><code class="language-npm">
-$ npm i lighter.css 
-        </code>        
-        </pre>
-          <hr>
-        <h4 class="text-underline">2 - Running the tests.</h4>
-        <p>You can simply add Lightx to your file Html.</p>
-        <pre><code class="language-html">
-&lt;link rel="stylesheet" type="text/css" href="lighter.min.css">
-        </code>
-        </pre>
-        <h4 class="text-underline">3 - Browser Support.</h4>
-      <div class="col-3 sea text-center">
-        <i class="fab fa-safari fa-5x"></i>
-        <h4>Safari</h4>
-      </div>
-      <div class="col-3 mauve text-center">
-        <i class="fab fa-chrome fa-5x"></i>
-        <h4>Chrome</h4>
-      </div>
-      <div class="col-3 royal text-center">
-        <i class="fab fa-edge fa-5x"></i>
-        <h4>Edge</h4>
-      </div>
-      <div class="col-3 fruit text-center">
-        <i class="fab fa-firefox fa-5x"></i>
-        <h4>Firefox</h4>
-      </div>
-      </div>
-    </div>
+</div>    
+</div>
+<div class="col-12">
+  <h4 class="hr-text" data-content="Features"></h4>
+</div>
+  <div class="col-3 text-center">
+    <i class="fab fa-leanpub fa-5x" style="color: #2ed573;"></i>
+    <h5>Easy to learn</h5>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center text-success">
-        <h5>Support <b>Lighter</b> on GitHub with only one Star, We encourage to do better than this</h5>
-        <iframe src="https://ghbtns.com/github-btn.html?user=amine1107&repo=lighter&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-      </div>
-      <div class="col-12 text-center text-info">
-        <h5>Fork the project, watch and follow us</h5>
-        <iframe src="https://ghbtns.com/github-btn.html?user=amine1107&repo=lighter&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-      </div>
-    </div>
+  <div class="col-3 text-center">
+    <i class="fas fa-pencil-ruler fa-5x" style="color: #5352ed;"></i>
+    <h5>Easy to use</h5>
   </div>
+  <div class="col-3 text-center">
+    <i class="fas fa-feather fa-5x" style="color: #006266;"></i>
+    <h5>Lightweight 13KB</h5>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fas fa-circle-notch fa-5x" style="color: #ff4757;"></i>
+    <h5>Open source</h5>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fas fa-th-large fa-5x" style="color: #f368e0;"></i>
+    <h5>12 colmun Grids</h5>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fas fa-laptop fa-5x" style="color: #009432;"></i>
+    <h5>Responsive</h5>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fab fa-js fa-5x" style="color: #f6b93b;"></i>
+    <h5>No Javascript</h5>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fab fa-sass fa-5x" style="color: #b71540;"></i>
+    <h5>Built with SASS</h5>
+  </div>
+  <div class="col-12">
+    <a href="pages/docs.html" class="btn primary btn-block">Getting Started</a> 
 
-  <div class="container fluid">
-    <div class="row">
-      <div class="col-6 border">
-        <h5>License</h5>
-        <hr>
+  </div>
+  <div class="col-12 mazSec">
+        <h3><i class="fas fa-gavel fa-x1 light-font" style="color: #f6b93b";></i> - License</h3>
         <p>Permission is hereby granted, free of charge, to any person obtaining a copy
           of this software and associated documentation files (the "Software"), to deal
           in the Software without restriction, including without limitation the rights
           to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
           copies of the Software...</p>
           <p>For More information : <a href="https://github.com/amine1107/lighter/blob/master/LICENSE">MIT License</a>.</p>
-      </div>
-      <div class="col-6 border">
-        <h5>Lighter Animations</h5>
-        <hr>
-        <p>You can Add Hexa Animation Library to bring your content to life.Learn more :</p>
-        <p>Hexa is an animation css library, built to be compatible with all browsers, it contains 35 animation type and and only 56 KB</p>
-        <p>For More information : <a href="https://amine1107.github.io/Hexa/">Hexa.css Animation</a>.</p>
-      </div>
-      <div class="col-12 border">
-        <h5 class="text-underline">Features.</h5>
-        <ul>
-          <li>Easy to learn</li>
-          <li>Easy to use</li>
-          <li>Lightweight 13KB</li>
-          <li>Modern</li>
-          <li>12 colmun Grids</li>
-          <li>Responsive</li>
-          <li>No Javascript</li>
-          <li>Built with Sass</li>
-        </ul>
-        <hr>
-        <h5 class="text-underline">Sass.</h5>
-        <p>Lighter is built with simplified Sass, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-        <p>Structure of Lighter Sass :</p>
+  </div>
+    
+    <div class="col-8 mazSec">
+       <h3><i class="fab fa-sass fa-x1 light-font" style="color: #b71540;"></i> - SASS</h3>
+              <p>Structure of Lighter Sass :</p>
         <pre>
 |---- scss
    |---- src
@@ -217,37 +359,66 @@ $ npm i lighter.css
           |---- typo.scss (Typography) 
       |---- lighter.scss                               
         </pre>
-      </div>
     </div>
+
+    <div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+
+
+</div>
+</div>
+<!-- /Introduction -->
+
+
+<footer class="header">
+  <div class="main-nav">
+    <ul>
+      <li class="text-center"><a href="https://github.com/amine1107">Aouane amine | 2018 MIT License</a></li>
+    </ul>
   </div>
-  <footer class="header">
-    <div class="main-nav">
-      <ul>
-        <li class="text-center"><a href="https://github.com/amine1107">Aouane amine | 2018 MIT License</a></li>
-      </ul>
-    </div>
-  </footer>
-    <!-- Script -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script src="assets/js/prism.js"></script>
-    <script>
-        $(".toggle").on("click", function () {
-            $(".toggle").parent().toggleClass('active');
-        });
-    </script>
-    <script type="text/javascript">
-            $(function() {
+</footer>
+<!-- Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script src="assets/js/prism.js"></script>
+<script>
+  $(".toggle").on("click", function () {
+    $(".toggle").parent().toggleClass('active');
+  });
+</script>
+<script type="text/javascript">
+  $(function() {
     $('.scroll-down').click (function() {
       $('html, body').animate({scrollTop: $('nav.ok').offset().top }, 'slow');
       return false;
     });
   });
 
-            $('h2').on("touchstart",function (){
+  $('h2').on("touchstart",function (){
   //simply starts listening for touchstart - allows for hover state on touch devices
 });
-    </script>
+</script>
+<script type="text/javascript">
+  var flkty = new Flickity( '.main-gallery', {
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    autoPlay: 5000
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".navbar").offset().top},"1000");return false})})
+</script>
+
 </body>
 </html>
